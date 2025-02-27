@@ -1,0 +1,1302 @@
+e=campaignTrail_temp
+if (!e.done) {
+e.done = true;
+
+campaignTrail_temp.global_parameter_json = [
+    {
+        "model": "campaign_trail.global_parameter",
+        "pk": 1,
+        "fields": {
+            "vote_variable": 1.125,
+            "max_swing": 0.12,
+            "start_point": 0.94,
+            "candidate_issue_weight": 10,
+            "running_mate_issue_weight": 3,
+            "issue_stance_1_max": -0.71,
+            "issue_stance_2_max": -0.3,
+            "issue_stance_3_max": -0.125,
+            "issue_stance_4_max": 0.125,
+            "issue_stance_5_max": 0.3,
+            "issue_stance_6_max": 0.71,
+            "global_variance": 0.01,
+            "state_variance": 0.005,
+            "question_count": 32,
+            "default_map_color_hex": "#C9C9C9",
+            "no_state_map_color_hex": "#999999"
+        }
+    }
+]
+
+
+    document.head.innerHTML += `<link
+      rel="stylesheet"
+      href="https://unpkg.com/98.css"
+    >`
+    
+    document.head.innerHTML += `<style>
+    h3 {
+      font-size:1.17em!important;
+    }
+  
+    label {
+      font-size:1em!important;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif!important;
+    }
+  body {display:flex!important;}
+  
+  #game_window{max-width:1000px;}
+    </style>`
+
+campaignTrail_temp.election_json = [
+    {
+        "model": "campaign_trail.election",
+        "pk": 9,
+        "fields": {
+            "year": 2000,
+            "summary": "<div style='overflow-y:scroll;height:200px;'><p>A new Millennium has come over the horizon and is shining brightly on America's soil. So much has changed in the past century. Two World Wars, America becoming the world's sole superpower, the emergence of nuclear warfare, aircraft, rapid medical advancements, the car, the television, computers, video games, women and minorities winning the right to vote, the Democratic Party losing dominance of the South, the Republicans being tossed aside for Democrats by their old Northern base. All within a century.</p>\n\n<p>The world has never been as wealthy as it is today, and world hunger has never been as low as well. On that note, the Millennium's first ever presidential election is about to kick off. It sees 77-year-old President Bob Dole face off with the Speaker of the House, Dick Gephardt.</p>\n\n<p>Issues around the campaign revolve around foreign affairs, especially in regards to the Balkans, with the last decade's implosion of Yugoslavia, which has ended in disaster for those living there, along with the recent rise in global terrorism, especially in regards to Islamist groups based in the Middle East. In regards to social issues, abortion, healthcare in general, and the recent rise of the gay pride movement are hotly debated on the internet forums and newspapers. One of the most pressing issues is the debate over the roughly $275 billion budget surplus, in particular about how to use the money.</p>\n\n<p>Despite President Dole's personal popularity, the race is expected to be close on election day. Both candidates must tread carefully, as even one mistake can cost them the election.</p></div>",
+            "image_url": "https://i.imgur.com/A2j4Anl.gif",
+            "winning_electoral_vote_number": 270,
+            "advisor_url": "https://i.imgur.com/dK49obk.gif",
+            "recommended_reading": "<h4 style=\"margin-top: 0.5em;\">The Florida Recount / 2000 Election</h4><a href=\"http://www.amazon.com/exec/obidos/ASIN/B000RH0DVM/amhius20-20\" target=”_blank”>Jeffrey Toobin - Too Close to Call: The Thirty-Six-Day Battle to Decide the 2000 Election</a></br><a href=\"http://www.amazon.com/exec/obidos/ASIN/B00EMLDHFI/amhius20-20\" target=”_blank”>Andrew E. Busch & James W. Ceaser - The Perfect Tie: The True Story of the 2000 Presidential Election</a></br><a href=\"http://www.amazon.com/exec/obidos/ASIN/032110028X/amhius20-20\" target=”_blank”>Larry Sabato - Overtime! The Election 2000 Thriller</a><h4>Books by the Candidates</h4><a href=\"http://www.amazon.com/exec/obidos/ASIN/B000C4SV2I/amhius20-20\" target=”_blank”>George W. Bush - A Charge to Keep: My Journey to the White House</a></br><a href=\"http://www.amazon.com/exec/obidos/ASIN/0452269350/amhius20-20\" target=”_blank”>Al Gore - Earth in the Balance</a></br><a href=\"http://www.amazon.com/exec/obidos/ASIN/B003YFIYWY/amhius20-20\" target=”_blank”>The Ralph Nader Reader</a><h4>Links</h4><a href=\"http://www.digitalhistory.uh.edu/disp_textbook.cfm?smtID=2&psid=3377\" target=”_blank”>Digital History - The Disputed Election of 2000</a></br><a href=\"http://www.pbs.org/wnet/supremecourt/future/landmark_bush.html\" target=”_blank”><em>Bush v. Gore</em></a></br><a href=\"http://www.vanityfair.com/news/2004/10/florida-election-2000\" target=”_blank”>The Path to Florida</a></br><a href=\"http://www.historyplace.com/speeches/gore-concedes.htm\" target=”_blank”>Al Gore Concedes the 2000 Election</a>",
+            "has_visits": 1,
+            "no_electoral_majority_image": "https://www.jetsimon.com/public/static/images/2012-no-majority.jpg",
+            "creator": "Dan Bryan",
+            "display_year": "2000"
+        }
+    }
+]
+
+campaignTrail_temp.candidate_json = [
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 77,
+        "fields": {
+            "first_name": "Robert J.",
+            "last_name": "Dole",
+            "election": 9,
+            "party": "Republican Party",
+            "state": "Kansas",
+            "priority": 1,
+            "description": "<div style='overflow-y:scroll;height:200px;'><b>FYI to playtesters: VP reselection is yet to be complete. Only Kemp 100% functions at the moment.</b><p>No one knows how or why Bob Dole is here right now; not even he knows himself, but he is.</p>\n\n<p>When he won the Republican Party's nomination for president, he knew he probably was not going to defeat President Clinton. All the polls had him trailing Clinton heavily, even though just a year earlier he was polled to defeat Clinton for re-election. When election night came, he watched the results already resigned to the fact that Clinton would be elected to a second term.</p>\n\n<p>But the opposite happened. In the most surprising upset since 1948, he unexpectedly beat Clinton. While he won the Electoral College, Clinton won the day in the popular vote. So, President-elect Dole will find himself in a peculiar situation when he takes the oath on January 20th. When that happens, he's going to need to find a way to win over the hearts of the vast majority of the American people, and quickly before the 1998 midterms. If the midterms prove disastrous, Dole can kiss his chances for re-election goodbye against whichever schmuck the Democrats nominate in 2000.</p></div>",
+            "color_hex": "#bf1d29",
+            "secondary_color_hex": "#FFA0A0",
+            "is_active": 1,
+            "image_url": "https://i.imgur.com/vEy5oZ3.png",
+            "electoral_victory_message": "<h3>Congratulations! You have won the 2000 election.</h3><p>Confounding the predictions of many experts, you were able to turn the tables on Al Gore, in spite of the economy and Clinton's popularity.</p><p>On the political front, you can push for tax cuts to spur the economy and return the budget surplus to the American people. You might also pursue education and immigration reform, individual Social Security accounts, and new laws to defend the family and the sanctity of life.</p>",
+            "electoral_loss_message": "<h3>Sorry! You have lost the 2000 election.</h3><p>Perhaps it was always a long-shot, with the Democrats in such a commanding position after eight years of Bill Clinton. In any case, at least you are still the Governor of Texas.</p><p>Expect Al Gore to unleash a new round of government programs and environmental regulations. You are still youngish, however. If the election was close this time, perhaps you can run again in 2004, or work on behalf your brother Jeb.</p>",
+            "no_electoral_majority_message": "<h3>Wow! You have won in a squeaker.</h3><p>No candidate achieved a majority of the electoral votes, marking the first time this has happened since 1824. Fortunately for you, the majority of U.S. states have Republican controlled congressional delegations, and they will cast their votes accordingly.</p><p>Given the incredibly close nature of the election, you will surely be expected to govern as a moderate, conciliatory President. Right??</p>",
+            "description_as_running_mate": "''",
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 78,
+        "fields": {
+            "first_name": "Richard A.",
+            "last_name": "Gephardt",
+            "election": 9,
+            "party": "Democratic Party",
+            "state": "Missouri",
+            "priority": 2,
+            "description": "<div style='overflow-y:scroll;height:200px;'><b>IMPORTANT: Currently not in game, coming out next update.</b><br><br>Well, this is not what Dick thought would be happening.</p>\n\n<p>He thought he'd be working with President Clinton for another four years, with a comfortable margin both popularly and electorally. However, that's clearly not what God had intended on that fateful November night.</p>\n\n<p>Once the night was over, it was clear: the Republican Revolution has spread into the White House, despite most people voting against it. The down ballot races weren't much better either. Both the House and Senate remained under Republican control.</p>\n\n<p>Now with Bill gone, it was all up to Dick to lead the opposition against President Dole and his Congressional cronies as the House Minority Leader. The first step to take back the White House from his filthy hands is giving him a black eye in the 1998 midterms; hopefully, though, by then, he won't have done much damage to all of the good work Bill had done as President. If that happens, he's considering his options for 2000.</p></div>",
+            "color_hex": "#1c408c",
+            "secondary_color_hex": "#90C0FF",
+            "is_active": 1,
+            "image_url": "https://i.imgur.com/YCtas3y.png",
+            "electoral_victory_message": "<h3>Congratulations! You have won the 2000 election.</h3><p>Though it was perhaps expected, you could have easily faltered at a number of points. Credit to you for pulling through.</p><p>On the political front, you can continue the Clinton legacy and strengthen Social Security for generations to come. Perhaps you can succeed on health care where Clinton came up short? Or maybe you can create a future of renewable energy for America. Just be wary of a (George or Jeb?) Bush challenge in 2004.</p>",
+            "electoral_loss_message": "<h3>Sorry! You have lost the 2000 election.</h3><p>Surely the second-guessing will be intense, but if things were close you could probably run again in 2004.</p><p>It seems that with George W. Bush and a Republican majority, the United States can expect some conservative policy-making over the next four years. Hopefully Bush comes through on his promise to govern in a bipartisan, conciliatory manner. A lot should depend on the margin of his victory, and whether it was large or small.</p>",
+            "no_electoral_majority_message": "<h3>Sorry! You have lost in a squeaker.</h3><p>No candidate achieved a majority of the electoral votes, for the first time since 1824. Unfortunately for you, a majority of states have Republican controlled congressional delegations.</p><p>It seems that with George W. Bush and a Republican majority, the United States can expect some conservative policy-making over the next four years. Hopefully Bush comes through on his promise to govern in a bipartisan, conciliatory manner.</p>",
+            "description_as_running_mate": "''",
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 79,
+        "fields": {
+            "first_name": "Ralph",
+            "last_name": "Nader",
+            "election": 9,
+            "party": "Green",
+            "state": "Connecticut",
+            "priority": 3,
+            "description": "''",
+            "color_hex": "#148a14",
+            "secondary_color_hex": "#A1FFA1",
+            "is_active": 0,
+            "image_url": "''",
+            "electoral_victory_message": "''",
+            "electoral_loss_message": "''",
+            "no_electoral_majority_message": "''",
+            "description_as_running_mate": "''",
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 80,
+        "fields": {
+            "first_name": "John S.",
+            "last_name": "Hagelin",
+            "election": 9,
+            "party": "Reform",
+            "state": "Iowa",
+            "priority": 4,
+            "description": "''",
+            "color_hex": "#580e6c",
+            "secondary_color_hex": "#FFFFC0",
+            "is_active": 0,
+            "image_url": "''",
+            "electoral_victory_message": "''",
+            "electoral_loss_message": "''",
+            "no_electoral_majority_message": "''",
+            "description_as_running_mate": "''",
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 81,
+        "fields": {
+            "first_name": "Jack F.",
+            "last_name": "Kemp",
+            "election": 9,
+            "party": "Republican Party",
+            "state": "New York",
+            "priority": 5,
+            "description": "''",
+            "color_hex": "#FF0000",
+            "secondary_color_hex": "#FFA0A0",
+            "is_active": 0,
+            "image_url": "https://i.imgur.com/OAZRwlO.png",
+            "electoral_victory_message": "''",
+            "electoral_loss_message": "''",
+            "no_electoral_majority_message": "''",
+            "description_as_running_mate": "you've seen too much",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 82,
+        "fields": {
+            "first_name": "John R.",
+            "last_name": "Kasich",
+            "election": 9,
+            "party": "Republican Party",
+            "state": "Ohio",
+            "priority": 6,
+            "description": "''",
+            "color_hex": "#FF0000",
+            "secondary_color_hex": "#FFA0A0",
+            "is_active": 0,
+            "image_url": "https://i.imgur.com/1duHadr.png",
+            "electoral_victory_message": "''",
+            "electoral_loss_message": "''",
+            "no_electoral_majority_message": "''",
+            "description_as_running_mate": "seriously bro you've seen too much",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 83,
+        "fields": {
+            "first_name": "John C.",
+            "last_name": "Danforth",
+            "election": 9,
+            "party": "Republican Party",
+            "state": "Missouri",
+            "priority": 7,
+            "description": "''",
+            "color_hex": "#FF0000",
+            "secondary_color_hex": "#FFA0A0",
+            "is_active": 0,
+            "image_url": "https://i.imgur.com/BV6sEOB.png",
+            "electoral_victory_message": "''",
+            "electoral_loss_message": "''",
+            "no_electoral_majority_message": "''",
+            "description_as_running_mate": "can't you not listen? jeez.",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 85,
+        "fields": {
+            "first_name": "Dianne E.",
+            "last_name": "Feinstein",
+            "election": 9,
+            "party": "Democratic Party",
+            "state": "California",
+            "priority": 9,
+            "description": "''",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": "#90C0FF",
+            "is_active": 0,
+            "image_url": "https://i.imgur.com/3IO3NjT.png",
+            "electoral_victory_message": "''",
+            "electoral_loss_message": "''",
+            "no_electoral_majority_message": "''",
+            "description_as_running_mate": "you've seen too much",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 86,
+        "fields": {
+            "first_name": "Zell B.",
+            "last_name": "Miller",
+            "election": 9,
+            "party": "Democratic Party",
+            "state": "Georgia",
+            "priority": 10,
+            "description": "''",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": "#90C0FF",
+            "is_active": 0,
+            "image_url": "https://i.imgur.com/VoFUDcJ.png",
+            "electoral_victory_message": "''",
+            "electoral_loss_message": "''",
+            "no_electoral_majority_message": "''",
+            "description_as_running_mate": "seriously bro you've seen too much",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 87,
+        "fields": {
+            "first_name": "George J.",
+            "last_name": "Mitchell",
+            "election": 9,
+            "party": "Democratic Party",
+            "state": "Maine",
+            "priority": 11,
+            "description": "''",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": "#90C0FF",
+            "is_active": 0,
+            "image_url": "https://i.imgur.com/ZYEEdGm.png",
+            "electoral_victory_message": "''",
+            "electoral_loss_message": "''",
+            "no_electoral_majority_message": "''",
+            "description_as_running_mate": "can't you not listen? jeez.",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 89,
+        "fields": {
+            "first_name": "Winona",
+            "last_name": "LaDuke",
+            "election": 9,
+            "party": "Green",
+            "state": "Minnesota",
+            "priority": 13,
+            "description": "''",
+            "color_hex": "#00C100",
+            "secondary_color_hex": "#A1FFA1",
+            "is_active": 0,
+            "image_url": "''",
+            "electoral_victory_message": "''",
+            "electoral_loss_message": "''",
+            "no_electoral_majority_message": "''",
+            "description_as_running_mate": "''",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 90,
+        "fields": {
+            "first_name": "Robert",
+            "last_name": "M. Bowman",
+            "election": 9,
+            "party": "Reform",
+            "state": "California",
+            "priority": 14,
+            "description": "''",
+            "color_hex": "#FFFF00",
+            "secondary_color_hex": "#FFFFC0",
+            "is_active": 0,
+            "image_url": "''",
+            "electoral_victory_message": "''",
+            "electoral_loss_message": "''",
+            "no_electoral_majority_message": "''",
+            "description_as_running_mate": "''",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    }
+]
+
+campaignTrail_temp.running_mate_json = [
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 57,
+        "fields": {
+            "candidate": 80,
+            "running_mate": 90
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 56,
+        "fields": {
+            "candidate": 79,
+            "running_mate": 89
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 48,
+        "fields": {
+            "candidate": 77,
+            "running_mate": 81
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 52,
+        "fields": {
+            "candidate": 78,
+            "running_mate": 85
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 53,
+        "fields": {
+            "candidate": 78,
+            "running_mate": 86
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 49,
+        "fields": {
+            "candidate": 77,
+            "running_mate": 82
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 54,
+        "fields": {
+            "candidate": 78,
+            "running_mate": 87
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 50,
+        "fields": {
+            "candidate": 77,
+            "running_mate": 83
+        }
+    }
+]
+
+var changeGameDisp = (hide) => {
+  disp = "";
+  if (hide) {
+    disp = "none";
+  }
+  document.getElementsByClassName("inner_window_w_desc")[0].style.display = disp
+};
+
+e.creditsPage = () => {
+  credits_html = `
+    <h3><font color='#4361B2'>Creator</font></h3>
+    <p><font color='#512121'>army2.0</font></p>
+    <h3><font color='#4361B2'>Provided Coding Assistance</font></h3>
+	<p>Calgar77 - Helped debug the Code 1</p>
+	<p>_ohas - Coded the endings</p>
+    <p><font color='#b665bc'>obama</font></p>
+	<h3>Playtesters</h3>
+    <h3>Provided Research & Ideas</h3>
+    <p>Roadrunner - Question + Candidate Description Ideas</p>
+	<p>Script1776 - Suggested Mitchell as a potential VP.</p>
+    <h3>Special Thanks</h3>
+	<p>Max - Gave coding & general modding advice</p>
+	<p>Diamondy30901 - Encouragement to develop the mod to begin with.</p>
+	<p>The entire PolSim Community - Encouraged development of the mod.</p>
+	<p>DecstarG - For the credits, soundtrack, and banner switch button codes.</p>
+	<p><font color='#410760'>ItsAstronomical - Start up sound code.</font></p>
+	<p>Bob Dole - For existing.</p>
+	<p>Dick Gephardt - For existing as well.</p>
+    </div>
+  `
+  changeGameDisp(true);
+  var spacer = document.createElement("amongusspacerthisisntarealelement");
+  spacer.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+  document
+    .getElementsByClassName("inner_window_w_desc")[0]
+    .children[1].appendChild(spacer);
+    changeGameDisp(true);
+    var menuHeader = document.createElement("div");
+    menuHeader.classList.add("inner_window_front");
+    menuHeader.innerHTML = `<p></p>`;
+    menuHeader.id = "SOTUheader";
+    menuHeader.style = "height: 1px;background-color:#D4D0C8";
+    var newMenu = document.createElement("div");
+    newMenu.classList.add("inner_window_front");
+    newMenu.id = "SOTUmenu";
+    newMenu.style = `height:260px;background-color:#D4D0C8;color:white;overflow-y: scroll;`;
+
+    newMenu.innerHTML = credits_html;
+    let z = document.getElementById("game_window");
+    var backButton = document.createElement("button");
+    backButton.style =
+      "position: relative; bottom: -13px; left: -380px; width: 150px; height: 80px;font-size:40px;padding-top:5px;padding-left:8px";
+    backButton.id = "backSOTUBtn";
+    backButton.innerHTML = `<b>BACK</b>`;
+    backButton.onclick = function () {
+      document.getElementById("SOTUheader").remove();
+      document.getElementById("SOTUmenu").remove();
+      document.getElementById("backSOTUBtn").remove();
+      changeGameDisp(false);
+    };
+    z.appendChild(menuHeader);
+    z.appendChild(newMenu);
+    z.appendChild(backButton);
+
+}
+
+e.credits = "<button onclick='e.creditsPage()'>Credits</button>"
+campaignTrail_temp.opponents_default_json = [
+    {
+        "election": 9,
+        "candidates": [
+            77,
+            78,
+            79,
+            80
+        ]
+    }
+]
+
+campaignTrail_temp.opponents_weighted_json = [
+    {
+        "election": 9,
+        "candidates": [
+            77,
+            78,
+            79,
+            80
+        ]
+    }
+]
+
+campaignTrail_temp.temp_election_list = [
+    {
+        "id": 9,
+        "year": 2000,
+        "is_premium": 0,
+        "display_year": "2000"
+    }
+]
+
+jet_data = {
+    "headerColor": "#7c9ccc",
+    "windowColor": "#ffffff",
+    "containerColor": "#e9e7e3",
+    "innerWindowColor": "#d4d0c8",
+    "bannerImageUrl": "https://i.imgur.com/tMv8RZ0.gif",
+    "backgroundImageUrl": "https://i.imgur.com/n7goidf.png",
+    "endingTextColor": "#000000",
+    "customQuote": "\"Our intent will not be to create gridlock. Oh, except maybe from time to time.\" - President Dole",
+    "gameTitle": "Bob's Macarena."
+}
+
+bannerArr=0
+bannerlist=["https://i.imgur.com/tMv8RZ0.gif", "https://i.imgur.com/uHHwH6x.png", "https://i.imgur.com/YitRYmU.png"]
+var changeBanner = () =>
+{
+bannerArr+=1
+document.getElementById("header").src=bannerlist[bannerArr % bannerlist.length]
+}
+document.getElementById("header").src=bannerlist[0]
+footer = $(".footer")[0]
+var button = document.createElement("button") // <button onclick="changeBanner()" style="font-weight: bold; height:19.49px; position: static; right: 770px; top: 0px;">Change banner</button>
+button.style = `font-weight: bold; height:19.49px; position: static; right: 770px; top: 0px;`
+button.innerHTML = "Load next Webpage"
+footer.insertBefore(button, footer.firstChild);
+button.onclick = changeBanner;
+
+// Initialise custom music
+
+$("#music_player")[0].children[0].style.display="none"
+$("#music_player")[0].children[1].style.display="none"
+
+document.getElementById("modLoadReveal").style.display="none"
+document.getElementById("modloaddiv").style.display="none"
+
+musicBox = document.getElementById("music_player")
+musicBox.style.display=""
+
+var trackSel;
+e = campaignTrail_temp
+e.selectedSoundtrack = 0
+
+toTime = (seconds) => {
+  var date = new Date(null);
+  date.setSeconds(seconds);
+  return date.toISOString().substr(11, 8);
+}
+
+generateTime = () => {
+    // Get the audio element
+    var audio = document.getElementById("campaigntrailmusic");
+
+    timeTracker = document.createElement("div");
+    timeTracker.style = `
+      text-align:left;
+      border-style:solid;
+      border-width:3px;
+      height:150px;
+      width:200px;
+      background-color:#D4D0C8;
+      float:right;
+      padding: 10px;
+    `
+    $("#trackSelParent")[0].prepend(timeTracker);
+    $("#trackSelParent")[0].prepend(document.createElement("br"));
+
+    // Create a new element to display the current position of the audio
+    var positionDisplay = document.createElement("gg");
+    positionDisplay.id = "position-display";
+
+    // Create a new slider element to change the time
+    var timeSlider = document.createElement("input");
+    timeSlider.type = "range";
+    timeSlider.min = 0;
+    timeSlider.max = 1;
+    timeSlider.step = 0.001;
+    timeSlider.value = 0;
+    timeSlider.style.width = "200px";
+    timeSlider.id = "time-slider";
+
+    var pausePlay = document.createElement("button");
+    pausePlay.id = "position-display";
+    pausePlay.innerHTML = "<b>Pause</b>"
+    pausePlay.style.width = "100%";
+
+
+    pausePlay.addEventListener("click", event => {
+      event.preventDefault();
+      updatePositionDisplay();
+      let audio = document.getElementById("campaigntrailmusic");
+      if (audio.paused) {
+        audio.play();
+        event.target.innerHTML = "<b>Pause</b>";
+        return;
+      }
+      audio.pause();
+      event.target.innerHTML = "<b>Play</b>";
+      return;
+    })
+
+    var volumeLabel = document.createElement("gg");
+    volumeLabel.id = "volume-label";
+    volumeLabel.innerHTML = "<br><b>Volume: </b>"
+
+    var volumeSlider = document.createElement("input");
+    volumeSlider.type = "range";
+    volumeSlider.min = 0;
+    volumeSlider.max = 1;
+    volumeSlider.step = 0.001;
+    volumeSlider.value = 0;
+    volumeSlider.style.width = "200px";
+    volumeSlider.id = "volume-slider";
+
+    volumeSlider.value = audio.volume;
+
+    timeTracker.appendChild(pausePlay);
+    timeTracker.appendChild(document.createElement("br"));
+    timeTracker.appendChild(document.createElement("br"));
+    timeTracker.appendChild(positionDisplay);
+    timeTracker.appendChild(timeSlider);
+    timeTracker.appendChild(volumeLabel);
+    timeTracker.appendChild(volumeSlider);
+
+    updatePositionDisplay();
+
+    //for (let i = 0; i < 10; i++)
+    //timeTracker.append(document.createElement("br"));
+
+
+    // Function to update the position display
+    function updatePositionDisplay() {
+      positionDisplay.innerHTML = "<b>Time:</b> " + toTime(audio.currentTime) + "<br>";
+      timeSlider.value = audio.duration ? audio.currentTime / audio.duration : 0;
+    }
+
+    // Function to change the time of the audio
+    function changeTime() {
+      positionDisplay.innerHTML = "<b>Time:</b> " + toTime(audio.currentTime) + "<br>";
+      audio.currentTime = timeSlider.value * audio.duration;
+    }
+
+    updateVolume = event => {
+      audio.volume = event.target.value;
+    }
+    
+    // Update the position display and slider every second
+    setInterval(updatePositionDisplay, 1000);
+
+    // Listen for changes to the time slider and change the time of the audio
+    timeSlider.addEventListener("input", changeTime);
+    volumeSlider.addEventListener("input", updateVolume)
+}
+
+function newMusicPlayer() {
+  trackSel = document.createElement("div");
+  trackSel.id = "trackSelParent"
+  let z = `<br><br><br><br><br><br><br><br><br><br><div id='trackSel' style="text-align:left;border-style:solid;border-width:3px;overflow-y: scroll;overflow-x: hidden;height:200px; width:400px;background-color:#D4D0C8;float:right;">`
+  z += `<b><select id='selectSoundtrack'><option value='`+soundtracks[e.selectedSoundtrack].name+`'>`+soundtracks[e.selectedSoundtrack].name+"</option>"
+  for (i in soundtracks) {
+    if (soundtracks[e.selectedSoundtrack] != soundtracks[i]) {
+      z += `<option value='`+soundtracks[i].name+`'>`+soundtracks[i].name+`</option>`
+    }
+  }
+  z += `</select></b><br><br>`
+  // <label><input type="radio" name="option" value="option1">Option 1</label><br>
+  for (i in soundtracks[e.selectedSoundtrack].tracklist) {
+    let a = soundtracks[e.selectedSoundtrack].tracklist[i]
+    let b = `<label><input class="trackSelector" type="radio" name="trackSelector" value="`+i+`">`+a.name+`</label><br>`
+    z += b
+  }
+  z += "</div><br><br>"
+  trackSel.innerHTML = z
+
+  // select correct song
+
+  musicBox.appendChild(trackSel);
+  Array.from(document.getElementById("trackSel").children).filter(f=>{
+    return f.tagName == "LABEL"
+  }).map(f=>f.children[0])[0].checked = true
+
+  // set soundtrack changer
+
+  soundtrackSelector = document.getElementById("selectSoundtrack")
+  soundtrackSelector.onchange = function() {
+    for (i in soundtracks) {
+      if (soundtracks[i].name == soundtrackSelector.value) {
+        e.selectedSoundtrack = i
+        break
+      }
+    }
+    document.getElementById("trackSelParent").remove()
+    newMusicPlayer()
+  }
+
+  var matches = document.querySelectorAll('.trackSelector');
+
+  for (match in matches) {
+    matches[match].onchange = function() {
+      audio = $("#campaigntrailmusic")[0];
+      audio.src = soundtracks[e.selectedSoundtrack].tracklist[this.value].url
+      audio.currentTime = 0
+    }
+  }
+
+  musicBox.children[2].loop = false
+  musicBox.children[2].src = soundtracks[e.selectedSoundtrack].tracklist[0].url
+
+  musicBox.children[2].onended = function() {
+    console.log("next track")
+    let selected = Number(document.querySelector('input[name="trackSelector"]:checked').value);
+    let newSel = clamp(selected+1, soundtracks[e.selectedSoundtrack].tracklist.length-1, 0)
+    let buttons = Array.from(document.getElementById("trackSel").children).filter(f=>{
+      return f.tagName == "LABEL"
+    }).map(f=>f.children[0])
+    //let selectedIndex = buttons.map(f=>f.children[0]).map(f=>f.checked)
+    buttons[newSel].click()
+  }
+
+  for (w = 0; w < 7; w++) {
+    document.getElementById("trackSelParent").appendChild(document.createElement("br"))
+  }
+  
+  generateTime();
+}
+
+clamp = function(a, max, min, overflow=true) {
+  if (overflow) {
+    return a > max ? min : a < min ? max : a;
+  }
+  return a > max ? max : a < min ? min : a;
+}
+
+
+// Track list
+
+var soundtracks = {
+  0: {
+    name: "Intro",
+    tracklist: [
+      {
+        "name": "Macarena - Los Del Rio",
+        "url": "https://files.catbox.moe/msyl1k.mp3"
+      },
+    ],
+  },
+  1: {
+    name: "Surplus, Pepsi, & Viagra",
+    tracklist: [
+      {
+        "name": "God Bless the USA - Lee Greenwood",
+        "url": "https://files.catbox.moe/13yxpo.mp3"
+      },
+      {
+        "name": "Born in the USA - Bruce Springsteen",
+        "url": "https://files.catbox.moe/4ypsyl.mp3"
+      },
+      {
+        "name": "Sweet Home Alabama - Lynyrd Skynyrd",
+        "url": "https://files.catbox.moe/d8iugc.mp3"
+      },
+      {
+        "name": "Happy Together - The Turtles",
+        "url": "https://files.catbox.moe/r89y4t.mp3"
+      },
+      {
+        "name": "Piano Man - Billy Joel",
+        "url": "https://files.catbox.moe/idwvm8.mp3"
+      },
+      {
+        "name": "Take On Me - a-ha",
+        "url": "https://files.catbox.moe/33w7iu.mp3"
+      },
+      {
+        "name": "YMCA - Village People",
+        "url": "https://files.catbox.moe/uwvzoi.mp3"
+      },
+      {
+        "name": "Summer of 69 - Bryan Adams",
+        "url": "https://files.catbox.moe/on0e7g.mp3"
+      },
+      {
+        "name": "Some Kind of Wonderful - Grand Funk Railroad",
+        "url": "https://files.catbox.moe/jys3ug.mp3"
+      },
+      {
+        "name": "Forever Young - Alphaville",
+        "url": "https://files.catbox.moe/fztals.mp3"
+      },
+      {
+        "name": "We Didn't Start the Fire - Billy Joel",
+        "url": "https://files.catbox.moe/25aewh.mp3"
+      },
+    ],
+  },
+  2: {
+    name: "Flip-Flopping Tunes",
+    tracklist: [
+      {
+        "name": "Eye of the Tiger - Survivor",
+        "url": "https://files.catbox.moe/mnvibk.mp3"
+      },
+      {
+        "name": "We're Not Gonna Take It - Twisted Sister",
+        "url": "https://files.catbox.moe/vkrehs.mp3"
+      },
+      {
+        "name": "[I Just] Died In Your Arms - Cutting Crew",
+        "url": "https://files.catbox.moe/l4s41m.mp3"
+      },
+      {
+        "name": "I'm Still Standing - Elton John",
+        "url": "https://files.catbox.moe/dphfmy.mp3"
+      },
+      {
+        "name": "Don't Stop Believin' - Journey",
+        "url": "https://files.catbox.moe/iabevh.mp3"
+      },
+      {
+        "name": "Chapel of Love - The Dixie Cups",
+        "url": "https://files.catbox.moe/gz8j36.mp3"
+      },
+      {
+        "name": "Africa - TOTO",
+        "url": "https://files.catbox.moe/k62qk1.mp3"
+      },
+      {
+        "name": "Sir Duke - Stevie Wonder",
+        "url": "https://files.catbox.moe/bn546f.mp3"
+      },
+      {
+        "name": "Where the Streets Have No Name - U2",
+        "url": "https://files.catbox.moe/3u9jgf.mp3"
+      },
+      {
+        "name": "No Surrender - Bruce Springsteen",
+        "url": "https://files.catbox.moe/yhin9s.mp3"
+      },
+      {
+        "name": "Bohemian Rhapsody - Queen",
+        "url": "https://files.catbox.moe/8m78ln.mp3"
+      },
+    ],
+  },
+}
+
+// Set up new music player
+
+newMusicPlayer()
+
+// Startup chime
+if (!campaignTrail_temp.chime) {
+    var music = new Audio('https://files.catbox.moe/emzz1g.mp3');
+    music.loop = false;
+    music.volume = 0.5;
+    music.play();
+    campaignTrail_temp.chime = true;
+}
+
+
+
+//#startcode
+
+  corrr = `
+  <div style="font-size: 11px; font-family: monospace; color: white;">
+    <h2 style="font-style: normal;">
+      <img src="https://i.imgur.com/jDwSgBy.gif" alt="Bob's Macarena" style="margin-top: 15px;">
+    </h2>
+  </div>
+  `;
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#7c9ccc";
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#ffffff";
+
+document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
+
+$("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
+
+$(".container")[0].style.backgroundColor = "#e9e7e3";
+
+document.getElementById("header").src = "https://i.imgur.com/tMv8RZ0.gif";
+
+document.body.background = "https://i.imgur.com/m9sFFRH.png";
+
+document.body.style.backgroundSize="cover"
+
+document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#d4d0c8!important;}</style>";
+
+quotes = [""]
+  customquote = quotes[Math.floor((Math.random() * quotes.length))]
+
+//#endcode
+
+// Minesweeper :D
+
+document.getElementById("modLoadReveal").style.display = "none";
+document.getElementById("modloaddiv").style.display = "none";
+let gameBox = document.getElementById("game_window");
+gameBox.style.display = "";
+
+const toggleButton = document.createElement("button");
+toggleButton.innerHTML = "Toggle Minesweeper";
+toggleButton.style = `
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 10000;
+    padding: 5px 10px;
+    border: 2px solid #ffffff;
+    color: black;
+    cursor: pointer;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+`;
+document.body.appendChild(toggleButton);
+
+function toggleMinesweeper() {
+    const container = document.getElementById("minesweeper-container");
+    if (container) {
+        container.style.display = container.style.display === "none" ? "block" : "none";
+    } else {
+        loadMinesweeperClassic();
+    }
+}
+
+toggleButton.addEventListener("click", toggleMinesweeper);
+
+function loadMinesweeperClassic() {
+    const existingContainer = document.getElementById("minesweeper-container");
+    if (existingContainer) {
+        return;
+    }
+
+    let minesweeperContainer = document.createElement("div");
+    minesweeperContainer.id = "minesweeper-container";
+    
+    minesweeperContainer.style = `
+        border: 2px solid #FFFFFF;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 350px;
+        width: 350px;
+        display: none;
+        cursor: move;
+        z-index: 9999;
+        background-color: #7C9CCC;
+    `;
+
+    minesweeperContainer.innerHTML = `
+        <div id="drag-handle" style="
+            background: #7C9CCC;
+            cursor: move;
+        ">Click to Drag</div>
+        <iframe 
+            src="https://98.js.org/programs/minesweeper/"
+            width="100%" 
+            height="100%" 
+            frameborder="0" 
+            allowfullscreen 
+            style="border: none;"></iframe>
+    `;
+
+    document.body.appendChild(minesweeperContainer);
+    makeDraggable(minesweeperContainer);
+}
+
+function makeDraggable(element) {
+    let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+    const dragHandle = element.querySelector('#drag-handle');
+    
+    dragHandle.onmousedown = dragMouseDown;
+
+    function dragMouseDown(e) {
+        e.preventDefault();
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        document.onmouseup = closeDragElement;
+        document.onmousemove = elementDrag;
+    }
+
+    function elementDrag(e) {
+        e.preventDefault();
+        pos1 = pos3 - e.clientX;
+        pos2 = pos4 - e.clientY;
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        element.style.top = (element.offsetTop - pos2) + "px";
+        element.style.left = (element.offsetLeft - pos1) + "px";
+    }
+
+    function closeDragElement() {
+        document.onmouseup = null;
+        document.onmousemove = null;
+    }
+}
+
+document.getElementById("game_start").addEventListener("click", loadMinesweeperClassic);
+loadMinesweeperClassic();
+
+let z = new MutationObserver((mutationsList, observer) => {
+            let runningMateSummary = document.querySelector("#running_mate_summary");
+            if (runningMateSummary) {
+                $("#running_mate_id_button").click();
+                observer.disconnect()
+            }
+        });
+
+
+        z.observe(document, { subtree: true, childList: true });
+    }
+
+// Administration Info Button!!!1
+
+document.getElementById("modLoadReveal").style.display = "none";
+document.getElementById("modloaddiv").style.display = "none";
+let gameBox = document.getElementById("game_window");
+gameBox.style.display = "";
+
+const toggleButton = document.createElement("button");
+toggleButton.innerHTML = "Dole Administration";
+toggleButton.style = `
+    position: fixed;
+    top: 37px;
+    right: 10px;
+    z-index: 10000;
+    padding: 5px 10px;
+    border: 2px solid #ffffff;
+    color: black;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+`;
+document.body.appendChild(toggleButton);
+
+function toggleWindow() {
+    const container = document.getElementById("custom-window-container");
+    if (container) {
+        container.style.display = container.style.display === "none" ? "block" : "none";
+    } else {
+        loadCustomWindow();
+    }
+}
+
+toggleButton.addEventListener("click", toggleWindow);
+
+function loadCustomWindow() {
+    const existingContainer = document.getElementById("custom-window-container");
+    if (existingContainer) {
+        return;
+    }
+
+    let customWindowContainer = document.createElement("div");
+    customWindowContainer.id = "custom-window-container";
+    
+    customWindowContainer.style = `
+        border: 2px outset #c0c0c0;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 450px;
+        height: 450px;
+        background-color: #d3d3d3;
+        display: none;
+        cursor: move;
+        z-index: 9999;
+        font-family: 'MS Sans Serif', Geneva, sans-serif;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    `;
+
+    customWindowContainer.innerHTML = `
+        <div id="drag-handle" style="
+            background: #7C9CCC;
+            color: white;
+            cursor: move;
+            padding: 5px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px;
+            border-bottom: 2px solid #7C9CCC;
+        ">The Dole Administration (1997-Present)</div>
+        
+        <div id="sections-container" style="padding: 10px; overflow-y: auto; height: 370px; max-height: 100%; font-size: 14px;">
+            
+            ${createSection("The Executive Branch", "section1", `
+                <img src="https://i.imgur.com/gA7K2Ze.png" alt="President Dole" />
+                <p><strong>Robert Joseph Dole</strong> is the 43rd President of the United States, inaugurated on January 20th, 1997. He is a Republican from Kansas and is the oldest man to hold that office. He previously served as the Senate Majority Leader. He was Gerald Ford's running mate in 1976 and made two previous aborted runs for the presidency in 1980 and 1988, respectively. He is considered a moderate conservative, and his record in the Senate reflects that. He also has a reputation for being overly rude to his political opponents. In recent times, he's been trying to moderate himself in this regard.</p>
+
+                <img src="https://i.imgur.com/2f8LHgm.png" alt="Liz Dole" />
+                <p>FLOTUS.</p>
+
+                <img src="https://i.imgur.com/ZAZ3Pkj.png" alt="Vice President Kemp" />
+                <p><strong>Jack French Kemp</strong> is the 46th Vice President of the United States and is a proud New Yorker. He was previously a member of the Bush Administration and had a successful tenure in the House. He was a quarterback for the Buffalo Bills after briefly serving in the US Army. He made his own run for the presidency in 1988 and has long been considered a rival to Dole; however, they seemingly put their rivalry aside in order to end the Clinton administration early. Despite Dole's initial unpopularity, Kemp is still very much popular with the public.</p>
+
+                <img src="https://i.imgur.com/Ehb4aus.png" alt="Joanne Kemp" />
+                <p>SLOTUS.</p>
+
+                <img src="https://i.imgur.com/sFsiN59.png" alt="Secretary Powell" />
+                <p><strong>Colin Luther Powell</strong> is the 64th United States Secretary of State. He is a trailblazer, a moniker seldom applied to a Republican in recent years, as he's the first African American to hold the post, therefore making him the highest-ranking Black man in US political history. Before that, he served as the 12th Chairman of the Joint Chiefs and the 15th US National Security Advisor, being the first Black man in both posts as well. He is a Vietnam War veteran, and along with General Schwartzkopf, is considered one of the masterminds of the liberation of Kuwait. Declining offers to be made into a 5-star general, a draft campaign for a bid for the presidency as a Republican was established for 1996; however, he graciously refused. His refusal was at the time what the media considered to be the GOP losing any chance of defeating Bill Clinton, but of course time proved them wrong. His record makes him a solid cabinet member, and his unanimous confirmation highlights that.</p>
+                
+				<img src="https://i.imgur.com/RjupJaV.png" alt="Secretary Roth" />
+                <p><strong>William Victor Roth Jr.</strong> is the 71st United States Secretary of the Treasury, and by all means he's a no-brainer pick to head the Treasury Department. Serving Delaware in the Senate for 26 years, he is the man responsible for the creation of the Roth IRA, which is named after him. Despite his excellent credentials for the office, his nomination was a bit controversial among Gingrichites, as he has on occasion broken with core party policies, such as voting in favor of the Brady Bill while he was in the Senate. However, his wit and credentials won over the Senate, and he was confirmed, though three Republicans voted against him.</p>
+				
+				<img src="https://i.imgur.com/5oLGBKZ.png" alt="Secretary Spence" />
+                <p><strong>Floyd Davidson Spence</strong> is a South Carolinian former Democrat turned Republican who finds himself as the 20th United States Secretary of Defense. A former congressman, he spent the final full term he was elected to in the Capitol as chair of the House National Security Committee, and before then, he was the ranking member of the Armed Services Committee, which he renamed to the National Security Committee upon taking up the chairmanship, therefore well equipping himself for his confirmation upon his nomination. Aside from that, he served in the Navy Reserve, reaching the rank of Captain. He is considered a capable defense secretary, despite his age.</p>
+				
+				<img src="https://i.imgur.com/guN92yP.png" alt="AG Barr" />
+                <p><strong>William Pelham Barr</strong> is no stranger to being the United States Attorney General, as he's already spent time as Attorney General before Dole was President. Specifically, he served as the 77th under the Bush Administration, and now he's made a return in the Dole Administration as the 79th. In his first term heading the Department of Justice, he authorized the operation that freed hostages at the Talladega Federal Prison in 1991. He also authored <i>The Case for More Incarceration,</i> a report that argued for increased incarceration, in 1992. He also advised President Bush to pardon 6 officials convicted in relation to the Iran-Contra affair. As a result, his confirmation largely followed party lines this time around.</p>
+				
+				<img src="https://i.imgur.com/Q5HQPcp.png" alt="Secretary Campbell" />
+                <p><strong>Ben Nighthorse Campbell</strong> was initially tapped to be the 48th United States Secretary of the Interior by President Dole for two very specific reasons, despite being a freshman senator from Colorado. First off, he's a proud Native American. He specifically belongs to the Northern Cheyenne Indian Reservation. Having a Native American head the interior department, in Dole's opinion, could symbolize his administration's good intentions towards the Native tribes of the United States. Secondly, Campbell was first elected as a Democrat; however, he switched parties just three years after being elected to the Senate. So, having a relatively new Republican in the cabinet could symbolize unity between the two parties within his cabinet. He was confirmed unanimously.</p>
+				
+				<img src="https://i.imgur.com/5iWPtFv.png" alt="Secretary Geringer" />
+                <p><strong>James Edward Geringer</strong> was the 30th Governor of Wyoming for a couple of years before he was tapped by President Dole to be the 27th United States Secretary of Agriculture. His father was a Volga German immigrant, and his mother was from Sweden. He served from 1967 to 1991 in the Air Force, the first decade being active duty, the rest in the reserves. He has a mechanical engineering background and ran his own farm, like many in his state. He ran the state as a conservative; however, he broke with the party by supporting efforts to combat climate change and supporting the Equal Rights Amendment. As a result, a few Republican senators opposed his nomination, however not enough to not confirm him.</p>
+				
+				<img src="https://i.imgur.com/Kj8grtG.png" alt="Secretary Engler" />
+                <p><strong>John Mathias Engler</strong> was on Dole's Vice Presidential shortlist back in 1996, so it was hardly a surprise to the public when he was announced to be the President's nominee to be the 32nd United States Secretary of Commerce. At the time of his nomination, he was serving as the 46th Governor of Michigan. He also concurrently served as Chairman of the Republican Governors Association from 1996 to his resignation upon assuming his seat in the Dole Administration. Seen as a relatively uncontroversial pick from a swing state, he had no trouble being confirmed by the Senate.</p>
+				
+				<img src="https://i.imgur.com/znYamlL.png" alt="Secretary Ros-Lehtinen" />
+                <p><strong>Ileana Ros-Lehtinen,</strong> the 23rd United States Secretary of Labor was born in Cuba mere years before the dawn of the Castro regime. She succeeded the late former Senator and Chair of the House Rules Committee Claude Pepper in a special election for his seat in 1989, a pick-up for the Republican Party, making her the first Cuban-American elected to Congress and the first woman from Florida to serve as well. She was particularly passionate about dealing with Cuba and defending Israel in Congress. Dole nominated her to head the Labor Department due to her ability to retain an open mind even if she was opinionated towards the issue in question. This ability is what made her nomination sail through the Senate.</p>
+				
+				<img src="https://i.imgur.com/R5fyU9N.png" alt="Secretary Frist" />
+                <p><strong>Thomas Fearn Frist Jr.,</strong> the 19th United States Secretary of Health and Human Services is the brother of freshman US Senator Bill Frist of Tennessee. A surgeon by trade, like his brother and father, he served as a flight surgeon in the Air Force before co-founding the Hospital Corporation of America with his father and a colleague of his, earning a considerable amount of wealth from this venture. Dole nominated him after Senator Frist suggested him for the position during a meeting during the transitional period in December 1996. Due to his relations with his brother and his experience in the medical field, his nomination was approved with relatively little opposition.</p>
+				
+				<img src="https://i.imgur.com/nZHKh5m.png" alt="Secretary Franks" />
+                <p><strong>Gary Alvin Franks,</strong> the 11th United States Secretary of Housing and Urban Development first came to public attention for being the first African American to be elected to Congress from Connecticut in 1990, serving until 1997, after losing re-election. However, he wasn't out of office for long, as Dole was looking for a noncontroversial, diverse pick for the role of HUD Secretary, and it just so happened that Franks was that option. His confirmation went fairly well, given his conservatism swayed the Republicans to his side, while his New England roots put Democrats at ease.</p>
+				
+				<img src="https://i.imgur.com/HufLxVO.png" alt="Secretary Kean" />
+                <p><strong>Thomas Howard Kean</strong> was nominated by President Dole and confirmed as the 13th United States Secretary of Transportation. He previously served as the 48th Governor of New Jersey from 1982 to 1990. He was first elected over his opponent in 1981 by just a margin of 1,797 votes. However, by the time he was up for re-election in 1985, he had proven his worth and was re-elected with 69.6% of the vote, the largest ever in New Jersey's history. He delivered the keynote speech at the 1988 Republican National Convention as well. President Dole nominated him to be the Transportation Secretary due to his experience managing the vast transportation networks of New Jersey, a large commuter state. He is not controversial, so his confirmation went off without a hitch.</p>
+				
+				<img src="https://i.imgur.com/zGUC084.png" alt="Secretary Wallop" />
+                <p><strong>Malcolm Wallop,</strong> a former United States Senator from Wyoming, .</p>
+				
+				<img src="https://i.imgur.com/7G0EmFB.png" alt="Secretary Sullivan" />
+                <p><strong>Dr. Louis Wade Sullivan</strong>.</p>
+				
+				<img src="https://i.imgur.com/MF0YhZH.png" alt="Secretary Rumsfeld" />
+                <p><strong>Donald Henry Rumsfeld</strong>.</p>
+				
+				<img src="https://i.imgur.com/ePU7hRR.png" alt="Administrator Rehberg" />
+                <p><strong>Dennis Ray Rehberg</strong>.</p>
+				
+				<img src="https://i.imgur.com/hkMx1Mx.png" alt="Director Martin" />
+                <p><strong>Lynn Morley Martin</strong>.</p>
+				
+				<img src="https://i.imgur.com/qeGNETT.png" alt="Director Rudman" />
+                <p><strong>Warren Bruce Rudman</strong>.</p>
+				
+				<img src="https://i.imgur.com/OIdXxtt.png" alt="Trade Representative Chao" />
+                <p><strong>Elaine Lan Chao</strong>.</p>
+				
+				<img src="https://i.imgur.com/qG4SwpM.png" alt="Ambassador Danforth" />
+                <p><strong>The Reverend John Claggett Danforth</strong>.</p>
+				
+				<img src="https://i.imgur.com/M7dB6Nk.png" alt="Chairman Livingston" />
+                <p><strong>Robert Linlithgow Livingston Jr.</strong>.</p>
+				
+				<img src="https://i.imgur.com/Y7mieQk.png" alt="Administrator Pryce" />
+                <p><strong>Deborah Denine Pryce</strong>.</p>
+				
+				<img src="https://i.imgur.com/dNvj6gm.png" alt="Director Kime" />
+                <p><strong>John William Kime</strong>.</p>
+				
+				<img src="https://i.imgur.com/IDMCo2I.png" alt="Director Heineman" />
+                <p><strong>Frederick K. Heineman</strong>.</p>
+				
+				<img src="https://i.imgur.com/pXzMwjZ.png" alt="Chief Reed" />
+                <p><strong>Scott Reed</strong>.</p>
+
+			`)}
+
+            ${createSection("The Legislative Branch", "section2", `
+                <img src="https://via.placeholder.com/100" alt="Legislative Image 1" />
+                <p>This is placeholder text for row 1 in the Legislative Branch section.</p>
+
+                <img src="https://via.placeholder.com/100" alt="Legislative Image 2" />
+                <p>This is placeholder text for row 2 in the Legislative Branch section.</p>
+
+                <img src="https://via.placeholder.com/100" alt="Legislative Image 3" />
+                <p>This is placeholder text for row 3 in the Legislative Branch section.</p>
+            `)}
+
+            ${createSection("The Judicial Branch", "section3", `
+                <img src="https://via.placeholder.com/100" alt="Judicial Image 1" />
+                <p>This is placeholder text for row 1 in the Judicial Branch section.</p>
+
+                <img src="https://via.placeholder.com/100" alt="Judicial Image 2" />
+                <p>This is placeholder text for row 2 in the Judicial Branch section.</p>
+
+                <img src="https://via.placeholder.com/100" alt="Judicial Image 3" />
+                <p>This is placeholder text for row 3 in the Judicial Branch section.</p>
+            `)}
+
+            ${createSection("The Dole Administration's Priorities", "section4", `
+                <img src="https://via.placeholder.com/100" alt="Priority Image 1" />
+                <p>This is placeholder text for row 1 in the Administration Priorities section.</p>
+
+                <img src="https://via.placeholder.com/100" alt="Priority Image 2" />
+                <p>This is placeholder text for row 2 in the Administration Priorities section.</p>
+
+                <img src="https://via.placeholder.com/100" alt="Priority Image 3" />
+                <p>This is placeholder text for row 3 in the Administration Priorities section.</p>
+            `)}
+			
+             ${createSection("1996 United States Elections", "section5", `
+                <img src="https://i.imgur.com/LdbXRys.png" style="width: 400px; height: 250px;" alt="Priority Image 1" />
+                <p><strong>Presidential Election</strong> </p>
+
+                <img src="https://i.imgur.com/VaSqjit.png" style="width: 400px; height: 250px;" alt="Priority Image 2" />
+                <p><strong>Senate Election</strong></p>
+
+                <img src="https://i.imgur.com/pUfmHT8.png" style="width: 400px; height: 250px;" alt="Priority Image 4" />
+                <p><strong>House Election</strong></p>
+				
+                <img src="https://i.imgur.com/3SvZXFw.png" style="width: 400px; height: 250px;" alt="Priority Image 5" />
+                <p><strong>Gubernatorial Election</strong></p>
+            `)}
+
+        </div>
+    `;
+
+    document.body.appendChild(customWindowContainer);
+    makeDraggable(customWindowContainer);
+
+    // Attach event listeners for section toggle buttons
+    document.querySelectorAll(".toggle-section").forEach(button => {
+        button.addEventListener("click", function () {
+            const content = document.getElementById(this.dataset.target);
+            content.style.display = content.style.display === "none" ? "block" : "none";
+            this.innerHTML = content.style.display === "none" ? "[ + ]" : "[ - ]";
+        });
+    });
+}
+
+function createSection(title, id, content) {
+    return `
+        <div class="section" style="margin-bottom: 10px; border-bottom: 2px solid #7C9CCC;">
+            <div class="header-box" style="background-color: #7C9CCC; padding: 5px; display: flex; justify-content: space-between; align-items: center;">
+                <h3 style="color: white; font-size: 14px; margin: 0;">${title}</h3>
+                <button class="toggle-section" data-target="${id}" style="
+                    background-color: #c0c0c0;
+                    border: 2px outset #808080;
+                    font-family: 'MS Sans Serif';
+                    font-size: 12px;
+                    cursor: pointer;
+                    padding: 2px 5px;
+                ">[ + ]</button>
+            </div>
+            
+            <div id="${id}" class="content-layer" style="background-color: #f0f0f0; padding: 10px; display: none; border: 2px solid #c0c0c0;">
+                ${content}
+            </div>
+        </div>
+    `;
+}
+
+function makeDraggable(element) {
+    let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+    const dragHandle = element.querySelector('#drag-handle');
+    
+    dragHandle.onmousedown = dragMouseDown;
+
+    function dragMouseDown(e) {
+        e.preventDefault();
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        document.onmouseup = closeDragElement;
+        document.onmousemove = elementDrag;
+    }
+
+    function elementDrag(e) {
+        e.preventDefault();
+        pos1 = pos3 - e.clientX;
+        pos2 = pos4 - e.clientY;
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        element.style.top = (element.offsetTop - pos2) + "px";
+        element.style.left = (element.offsetLeft - pos1) + "px";
+    }
+
+    function closeDragElement() {
+        document.onmouseup = null;
+        document.onmousemove = null;
+    }
+}
+
+document.getElementById("game_start").addEventListener("click", loadCustomWindow);
+loadCustomWindow();
