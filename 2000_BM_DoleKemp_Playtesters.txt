@@ -306,7 +306,7 @@ campaignTrail_temp.questions_json = [
         "pk": 381,
         "fields": {
             "priority": -1,
-            "description": "Scott Reed, your Chief of Staff, who resigned to manage your re-election campaign, and previously ran your '96 campaign, has just given you a pointed piece of advice: if you want to secure victory against Gephardt, you need to go on the offensive. As the incumbent, you've got plenty of advantages—experience, visibility, and a proven record—but one of your rare weaknesses is that you’ve been forced into a constant defensive position, reacting to Gephardt’s attacks rather than shaping the narrative. To turn this around, you need to strike first.",
+            "description": "Scott Reed, your Chief of Staff, has just given you a pointed piece of advice: "if you want to secure victory against Gephardt, you need to go on the offensive. As the incumbent, you've got plenty of advantages—experience, visibility, and a proven record—but one of your weaknesses is that you’ve been forced into a constant defensive position, reacting to attacks rather than shaping the narrative. You need to strike decisively.",
             "likelihood": 1
         }
     },
@@ -830,7 +830,7 @@ campaignTrail_temp.answers_json = [
         "pk": 3453,
         "fields": {
             "question": 381,
-            "description": "He's a blatant flip-flopper. Look at his abortion record. And his foreign policy? He used to be a strong foreign policy man, but then conveniently shifted it in the mid-1980s to be more dovish, around the same time the party's foreign policy began to shift and also when he got into House leadership, and then when the Iraqi shenanigans occurred, he staunchly opposed the fight to liberate Kuwait. Of course, this is all a coincidence, surely."
+            "description": "He's a blatant flip-flopper. Look at his abortion record. And his foreign policy? He used to be a strong foreign policy man, but then conveniently shifted it in the mid-1980s to be more dovish, around the same time the party's foreign policy began to shift and also when he got into House leadership, and then when the Iraqi shenanigans occurred, he staunchly opposed the fight to liberate Kuwait."
         }
     },
     {
@@ -854,7 +854,7 @@ campaignTrail_temp.answers_json = [
         "pk": 3456,
         "fields": {
             "question": 381,
-            "description": "Gephardt is an opponent of NAFTA. Most Americans back it, and many of the people who Perot appealed to have finally been wooed by the successes of NAFTA, which went against their own fears. Yet, the Speaker has dug his heels in on the issue, even as most of his party and supporters support the agreement. The Dole Administration has maintained a consistent pro-NAFTA record, in stark comparison to the opposition."
+            "description": "Gephardt is an opponent of NAFTA. Most Americans back it, and many of the people who Perot appealed to have finally been wooed by the successes of NAFTA, which went against their own fears. Yet, the Speaker has dug his heels in on the issue, even as most of his party and supporters support the agreement. The Dole Administration has maintained a consistent pro-NAFTA record in comparison."
         }
     },
     {
@@ -13749,7 +13749,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 3396,
             "candidate": 77,
-            "answer_feedback": "The bill seems doomed, but you give a tearful, heartfelt speech mentioning Dr. Kelikian, which sways many in a bipartisan meeting. Despite fears of angering Turkey, the bill passes in a fractured vote. Their ambassador denounces you, while the Armenian ambassador sends flowers and a personal thank-you note from the president. The media, however, is far less supportive."
+            "answer_feedback": "The bill seems doomed, but you give a tearful, heartfelt speech mentioning Dr. K, which sways many. Despite fears of angering Turkey, the bill passes in a fractured vote. Their ambassador denounces you, while the Armenian ambassador sends a personal thank-you note. The media, however, is far less supportive."
         }
     },
     {
@@ -15054,7 +15054,6 @@ else if (quickstats[0] <= 218 && (e.player_answers.includes(3375))) {
             
                     e.executable.push([0, (() => {e.image = e.image = 'https://i.imgur.com/fl2edqb.png'})])
                     e.executable.push([1, (() => {
-                    nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#700016";
                     nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#BFE6FF";
                     document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
                     $("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
@@ -15118,13 +15117,3 @@ else if (quickstats[0] <= 218 && (e.player_answers.includes(3375))) {
     aud.play();
     return 0;
   }
-
-  function changechart(){
-if (document.getElementById("overall_vote_statistics")!=null) {
-overallthing=document.getElementById("overall_vote_statistics").innerHTML;
-overallthing.toString()
-overallthing=overallthing.replace("Electoral Votes","Counties Won")
-document.getElementById("overall_vote_statistics").innerHTML=overallthing
-}
-}
-window.setInterval(changechart,200)
