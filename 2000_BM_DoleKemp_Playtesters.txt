@@ -306,7 +306,7 @@ campaignTrail_temp.questions_json = [
         "pk": 381,
         "fields": {
             "priority": -1,
-            "description": "Scott Reed, your Chief of Staff, has just given you a pointed piece of advice: "if you want to secure victory against Gephardt, you need to go on the offensive. As the incumbent, you've got plenty of advantages—experience, visibility, and a proven record—but one of your weaknesses is that you’ve been forced into a constant defensive position, reacting to attacks rather than shaping the narrative. You need to strike decisively.",
+            "description": "Scott Reed, your Chief of Staff, who resigned to manage your re-election campaign, and previously ran your '96 campaign, has just given you a pointed piece of advice: if you want to secure victory against Gephardt, you need to go on the offensive. As the incumbent, you've got plenty of advantages—experience, visibility, and a proven record—but one of your rare weaknesses is that you’ve been forced into a constant defensive position, reacting to Gephardt’s attacks rather than shaping the narrative. To turn this around, you need to strike first.",
             "likelihood": 1
         }
     },
@@ -830,7 +830,7 @@ campaignTrail_temp.answers_json = [
         "pk": 3453,
         "fields": {
             "question": 381,
-            "description": "He's a blatant flip-flopper. Look at his abortion record. And his foreign policy? He used to be a strong foreign policy man, but then conveniently shifted it in the mid-1980s to be more dovish, around the same time the party's foreign policy began to shift and also when he got into House leadership, and then when the Iraqi shenanigans occurred, he staunchly opposed the fight to liberate Kuwait."
+            "description": "He's a blatant flip-flopper. Look at his abortion record. And his foreign policy? He used to be a strong foreign policy man, but then conveniently shifted it in the mid-1980s to be more dovish, around the same time the party's foreign policy began to shift and also when he got into House leadership, and then when the Iraqi shenanigans occurred, he staunchly opposed the fight to liberate Kuwait. Of course, this is all a coincidence, surely."
         }
     },
     {
@@ -854,7 +854,7 @@ campaignTrail_temp.answers_json = [
         "pk": 3456,
         "fields": {
             "question": 381,
-            "description": "Gephardt is an opponent of NAFTA. Most Americans back it, and many of the people who Perot appealed to have finally been wooed by the successes of NAFTA, which went against their own fears. Yet, the Speaker has dug his heels in on the issue, even as most of his party and supporters support the agreement. The Dole Administration has maintained a consistent pro-NAFTA record in comparison."
+            "description": "Gephardt is an opponent of NAFTA. Most Americans back it, and many of the people who Perot appealed to have finally been wooed by the successes of NAFTA, which went against their own fears. Yet, the Speaker has dug his heels in on the issue, even as most of his party and supporters support the agreement. The Dole Administration has maintained a consistent pro-NAFTA record, in stark comparison to the opposition."
         }
     },
     {
@@ -5273,7 +5273,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 77,
             "state": 228,
-            "state_multiplier": 0.45
+            "state_multiplier": 0.15
         }
     },
     {
@@ -13749,7 +13749,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 3396,
             "candidate": 77,
-            "answer_feedback": "The bill seems doomed, but you give a tearful, heartfelt speech mentioning Dr. K, which sways many. Despite fears of angering Turkey, the bill passes in a fractured vote. Their ambassador denounces you, while the Armenian ambassador sends a personal thank-you note. The media, however, is far less supportive."
+            "answer_feedback": "The bill seems doomed, but you give a tearful, heartfelt rant regarding Dr. K, which sways many in a meeting. Despite fears of angering Turkey, the bill passes in a fractured vote. Their ambassador denounces you, while the Armenian ambassador sends a thank-you note. The media, however, is less supportive."
         }
     },
     {
@@ -14956,7 +14956,7 @@ e.pages.push(`<h2>The Campaign Trail</h2>
           <p>Please select the election you will run in: <br><select name="2004" id="2004"><option value="0">2004</option></select><br><img src=https://i.imgur.com/6Pj9441.png>	<br>With President Dick Gephardt's first term nearly coming to an end, the former Mayor of New York City, Rudy Giuliani, famous for his handling of the September 11th Attacks, rises to head the Republican ticket. Meanwhile, President Gephardt wins his party's nomination for a second term easily. President Gephardt must empthasize his legislative accomplishments and his handling of the War on Terror, while former Mayor Giuliani must explain how he'll be a more effective leader of the War on Terror, attack some of his opponent's questionable foreign policy decisions, while navigating the skeletons in his past, which are sometimes outright hypocritical to his platform.</p>`)
           autoHalveVolumeOnce(setMusic("https://files.catbox.moe/oeeu1n.mp3"));
         //e.image = ""
-        e.executable.push([0, (() => {e.image = e.image = 'https://i.imgur.com/9gX0SKe.png'})])
+        e.executable.push([0, (() => {e.image = e.image = 'https://i.imgur.com/fl2edqb.png'})])
         e.executable.push([1, (() => {
             nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#BFE6FF";
             document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
@@ -14981,7 +14981,7 @@ e.pages.push(`<h2>The Campaign Trail</h2>
               <p>Please select the election you will run in: <br><select name="2004" id="2004"><option value="0">2004</option></select><br><img src=https://i.imgur.com/eNyfQxu.png>	<br>With President Dick Gephardt's first term nearly coming to an end, the Governor of Florida, Jeb Bush, the son of former President George H.W. Bush, rises to head the Republican ticket. Meanwhile, President Gephardt wins his party's nomination for a second term easily. President Gephardt must empthasize his legislative accomplishments and his handling of the War on Terror, while Governor Bush must explain how the President's liberal policies could set the nation for failure, including some of his opponent's questionable foreign policy deciions, while making the case for his aggressive conservative agenda he implemented in Florida.</p>`)
               autoHalveVolumeOnce(setMusic("https://files.catbox.moe/oeeu1n.mp3"));
             //e.image = ""
-            e.executable.push([0, (() => {e.image = e.image = 'https://i.imgur.com/9gX0SKe.png'})])
+            e.executable.push([0, (() => {e.image = e.image = 'https://i.imgur.com/fl2edqb.png'})])
             } 
             else if (aa[0].electoral_votes >= 270 && aa[0].electoral_votes < 320 && (e.player_answers.includes(12353))) { //Dole close loss
                 e.pages.push(`<h4>CNN Election 2000 Coverage</h4>
@@ -14997,7 +14997,7 @@ e.pages.push(`<h2>The Campaign Trail</h2>
                   <p>Please select the election you will run in: <br><select name="2004" id="2004"><option value="0">2004</option></select><br><img src=https://i.imgur.com/yCdGLGC.png>	<br>With President Dick Gephardt's first term nearly coming to an end, the infamous maverick and Vietnam War hero, Senator John McCain of Arizona, accept the call to duty to head the Republican ticket. Meanwhile, President Gephardt wins his party's nomination for a second term easily. President Gephardt must empthasize his legislative accomplishments and his handling of the War on Terror, while former McCain must explain how he'll be a more effective leader of the War on Terror, attack some of his opponent's questionable foreign policy decisions, while painting himself as a nonpartisan leader who will advance a pragmatic agenda to make peoples' lives better.</p>`)
                   autoHalveVolumeOnce(setMusic("https://files.catbox.moe/oeeu1n.mp3"));
                 //e.image = ""
-                e.executable.push([0, (() => {e.image = e.image = 'https://i.imgur.com/9gX0SKe.png'})])
+                e.executable.push([0, (() => {e.image = e.image = 'https://i.imgur.com/fl2edqb.png'})])
                 e.executable.push([1, (() => {
                     nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#BFE6FF";
                     document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
@@ -15074,7 +15074,7 @@ else if (quickstats[0] <= 218 && (e.player_answers.includes(3375))) {
                             
                             `)
                             {e.pages.push
-                             (`<h2>The Campaign Trail</h2> // Gephardt vs Brownback
+                             (`<h2>The Campaign Trail</h2>
                              <p>Please select the election you will run in: <br><select name="2004" id="2004"><option value="0">2004</option></select><br><img src=https://i.imgur.com/TPPYHXH.png>	<br>With President Dick Gephardt's first term nearly coming to an end, Senator Sam Brownback of Kansas, who was just a couple years ago little known, narrowly wins the Republican nomination. Meanwhile, President Gephardt wins his party's nomination for a second term easily. President Gephardt must empthasize his legislative accomplishments, his handling of the War on Terror, and general popularity, while Senator Brownback must emphasize his conservative policies riding on the growing nostolgia for the Reagan era, after his recent death, while finding some way to narrow the President's respectible lead in the polls.</p>`)}
                     
                             e.executable.push([0, (() => {e.image = e.image = 'https://i.imgur.com/fl2edqb.png'})])
