@@ -675,14 +675,6 @@ campaignTrail_temp.answers_json = [
     },
     {
         "model": "campaign_trail.answer",
-        "pk": 3375,
-        "fields": {
-            "question": 360,
-            "description": "Respectfully, I think it's best for him to sit this one out. We have so many differences, which we cannot overcome. Though, due to my respect for him, I will allow him to remain in the vice presidency for the remainder of the term, and I will not pressure him to resign. Congressman John Kasich of Ohio is who will run in his place. He is a highly competent individual and is the primary author of all of these balanced budgets, in addition to the 28th Amendment."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
         "pk": 3381,
         "fields": {
             "question": 362,
@@ -1263,14 +1255,6 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 12312,
             "description": "We'll have a nice day on the sunny shores of Florida, visiting the suburbs and the Hispanic community, with special focus on Cubans. Then afterwards, I'll join a watch party with Governor Bush in Tallahassee."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 12353,
-        "fields": {
-            "question": 360,
-            "description": "Respectfully, I think it's best for him to sit this one out. We have so many differences, which we cannot overcome. Though, due to my respect for him, I will allow him to remain in the vice presidency for the remainder of the term, and I will not pressure him to resign. UN Ambassador John Danforth of Missouri I think really represents the vision I want to set in my second term. He's a man of God who has repeatedly stood for what's right, and he will be a good Vice President."
         }
     }
 ]
@@ -7115,26 +7099,6 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
-        "pk": 12616,
-        "fields": {
-            "answer": 12353,
-            "candidate": 77,
-            "affected_candidate": 77,
-            "global_multiplier": -0.001
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 12617,
-        "fields": {
-            "answer": 3375,
-            "candidate": 77,
-            "affected_candidate": 77,
-            "global_multiplier": -0.001
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
         "pk": 12651,
         "fields": {
             "answer": 3417,
@@ -9191,7 +9155,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 12889,
         "fields": {
             "answer": 12295,
-            "issue": "27",
+            "issue": 27,
             "issue_score": -0.3,
             "issue_importance": 5
         }
@@ -9221,7 +9185,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 12927,
         "fields": {
             "answer": 12303,
-            "issue": "27",
+            "issue": 27,
             "issue_score": -0.3,
             "issue_importance": 5
         }
@@ -9261,7 +9225,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 12931,
         "fields": {
             "answer": 12304,
-            "issue": "27",
+            "issue": 27,
             "issue_score": -0.3,
             "issue_importance": 5
         }
@@ -9301,7 +9265,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 12935,
         "fields": {
             "answer": 12305,
-            "issue": "27",
+            "issue": 27,
             "issue_score": -0.3,
             "issue_importance": 5
         }
@@ -9341,7 +9305,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 12939,
         "fields": {
             "answer": 12306,
-            "issue": "27",
+            "issue": 27,
             "issue_score": -0.3,
             "issue_importance": 5
         }
@@ -9381,7 +9345,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 13001,
         "fields": {
             "answer": 12321,
-            "issue": "27",
+            "issue": 27,
             "issue_score": -0.125,
             "issue_importance": 5
         }
@@ -9421,7 +9385,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 13005,
         "fields": {
             "answer": 12322,
-            "issue": "27",
+            "issue": 27,
             "issue_score": -0.125,
             "issue_importance": 5
         }
@@ -9541,7 +9505,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 13028,
         "fields": {
             "answer": 12339,
-            "issue": "27",
+            "issue": 27,
             "issue_score": -0.125,
             "issue_importance": 5
         }
@@ -10384,116 +10348,6 @@ campaignTrail_temp.answer_score_state_json = [
     },
     {
         "model": "campaign_trail.answer_score_state",
-        "pk": 12600,
-        "fields": {
-            "answer": 12353,
-            "state": 184,
-            "candidate": 77,
-            "affected_candidate": 77,
-            "state_multiplier": 0.02
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 12601,
-        "fields": {
-            "answer": 12353,
-            "state": 195,
-            "candidate": 77,
-            "affected_candidate": 77,
-            "state_multiplier": 0.015
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 12602,
-        "fields": {
-            "answer": 12353,
-            "state": 222,
-            "candidate": 77,
-            "affected_candidate": 77,
-            "state_multiplier": 0.02
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 12603,
-        "fields": {
-            "answer": 12353,
-            "state": 213,
-            "candidate": 77,
-            "affected_candidate": 77,
-            "state_multiplier": 0.02
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 12604,
-        "fields": {
-            "answer": 12353,
-            "state": 226,
-            "candidate": 77,
-            "affected_candidate": 77,
-            "state_multiplier": 0.02
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 12605,
-        "fields": {
-            "answer": 12353,
-            "state": 229,
-            "candidate": 77,
-            "affected_candidate": 77,
-            "state_multiplier": 0.015
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 12606,
-        "fields": {
-            "answer": 12353,
-            "state": 206,
-            "candidate": 77,
-            "affected_candidate": 77,
-            "state_multiplier": 0.02
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 12607,
-        "fields": {
-            "answer": 12353,
-            "state": 208,
-            "candidate": 77,
-            "affected_candidate": 77,
-            "state_multiplier": -0.025
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 12608,
-        "fields": {
-            "answer": 12353,
-            "state": 211,
-            "candidate": 77,
-            "affected_candidate": 77,
-            "state_multiplier": -0.025
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 12609,
-        "fields": {
-            "answer": 12353,
-            "state": 205,
-            "candidate": 77,
-            "affected_candidate": 77,
-            "state_multiplier": 0.025
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
         "pk": 12610,
         "fields": {
             "answer": 3374,
@@ -10523,182 +10377,6 @@ campaignTrail_temp.answer_score_state_json = [
             "candidate": 77,
             "affected_candidate": 77,
             "state_multiplier": 0.025
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 12619,
-        "fields": {
-            "answer": 3375,
-            "state": 217,
-            "candidate": 77,
-            "affected_candidate": 77,
-            "state_multiplier": -0.025
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 12620,
-        "fields": {
-            "answer": 3375,
-            "state": 209,
-            "candidate": 77,
-            "affected_candidate": 77,
-            "state_multiplier": -0.02
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 12621,
-        "fields": {
-            "answer": 3375,
-            "state": 199,
-            "candidate": 77,
-            "affected_candidate": 77,
-            "state_multiplier": -0.02
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 12622,
-        "fields": {
-            "answer": 3375,
-            "state": 187,
-            "candidate": 77,
-            "affected_candidate": 77,
-            "state_multiplier": -0.02
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 12623,
-        "fields": {
-            "answer": 3375,
-            "state": 211,
-            "candidate": 77,
-            "affected_candidate": 77,
-            "state_multiplier": -0.025
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 12624,
-        "fields": {
-            "answer": 3375,
-            "state": 208,
-            "candidate": 77,
-            "affected_candidate": 77,
-            "state_multiplier": -0.025
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 12625,
-        "fields": {
-            "answer": 3375,
-            "state": 229,
-            "candidate": 77,
-            "affected_candidate": 77,
-            "state_multiplier": 0.025
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 12626,
-        "fields": {
-            "answer": 3375,
-            "state": 222,
-            "candidate": 77,
-            "affected_candidate": 77,
-            "state_multiplier": 0.025
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 12627,
-        "fields": {
-            "answer": 3375,
-            "state": 213,
-            "candidate": 77,
-            "affected_candidate": 77,
-            "state_multiplier": 0.02
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 12628,
-        "fields": {
-            "answer": 3375,
-            "state": 190,
-            "candidate": 77,
-            "affected_candidate": 77,
-            "state_multiplier": 0.02
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 12629,
-        "fields": {
-            "answer": 3375,
-            "state": 198,
-            "candidate": 77,
-            "affected_candidate": 77,
-            "state_multiplier": 0.025
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 12630,
-        "fields": {
-            "answer": 3375,
-            "state": 206,
-            "candidate": 77,
-            "affected_candidate": 77,
-            "state_multiplier": 0.02
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 12632,
-        "fields": {
-            "answer": 3375,
-            "state": 218,
-            "candidate": 77,
-            "affected_candidate": 77,
-            "state_multiplier": 0.015
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 12633,
-        "fields": {
-            "answer": 3375,
-            "state": 202,
-            "candidate": 77,
-            "affected_candidate": 77,
-            "state_multiplier": 0.01
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 12634,
-        "fields": {
-            "answer": 3375,
-            "state": 210,
-            "candidate": 77,
-            "affected_candidate": 77,
-            "state_multiplier": 0.01
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 12635,
-        "fields": {
-            "answer": 3375,
-            "state": 230,
-            "candidate": 77,
-            "affected_candidate": 77,
-            "state_multiplier": 0.015
         }
     },
     {
@@ -13691,15 +13369,6 @@ campaignTrail_temp.answer_feedback_json = [
     },
     {
         "model": "campaign_trail.answer_feedback",
-        "pk": 762,
-        "fields": {
-            "answer": 3375,
-            "candidate": 77,
-            "answer_feedback": "This was very unexpected, to say the least. Jack rightfully feels betrayed; however, he agrees to hold his breath in public. Kasich's selection has gone well in the South and Rust Belt, but especially in Ohio. Though, states concerned by the increasing conservatism of the House GOP aren't receiving it well."
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
         "pk": 766,
         "fields": {
             "answer": 3381,
@@ -14393,15 +14062,6 @@ campaignTrail_temp.answer_feedback_json = [
     },
     {
         "model": "campaign_trail.answer_feedback",
-        "pk": 12354,
-        "fields": {
-            "answer": 12353,
-            "candidate": 77,
-            "answer_feedback": "This was very unexpected, to say the least. Jack rightfully feels betrayed; however, he agrees to hold his breath in public. Danforth's presence on the ticket boosts your numbers in states such as Arkansas and Missouri, especially with voters who consider themselves religious."
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
         "pk": 12394,
         "fields": {
             "answer": 3331,
@@ -14411,7 +14071,135 @@ campaignTrail_temp.answer_feedback_json = [
     }
 ]
 
+campaignTrail_temp.multiple_endings = true;
+endingPicker = (out, totv, aa, quickstats) => {
 
+    function setImage(url) {
+        if(url == '' || url == null) return;
+        let interval = setInterval(function () {
+            img = document.getElementsByClassName("person_image")[0];
+            if (img != null) {
+                img.src = url;
+                clearInterval(interval);
+            }
+        }, 50);
+    }
+
+    if(quickstats[0] == 538) {
+        setImage("https://i.imgur.com/2MBz1pL.png");
+        return `<h4>I know you cheated. Did you really think you could get away with it?</h4>
+
+get a life bozo`;
+    }
+    if(quickstats[0] > 270) {
+        setImage("https://i.imgur.com/1ho7ZxE.png");
+        return `<div style='overflow-y:scroll;height:310px;'><h4>CNN Election 2000 Coverage</h4>
+<h4>PRESIDENT DOLE RE-ELECTED BY CLOSE MARGIN; MULTIPLE STATES YET TO BE CALLED. GEPHARDT CONCEDES.</h4>
+
+President Robert J. Dole of Kansas, at the age of 77 years old, has been re-elected, winning his party a second term in the Oval Office, in a close election against the Speaker of the House, Richard Gephardt. In a stark comparison to four years ago, Dole is expected to win the popular vote against his challenger; however, due to the election being close, this can shift; however, his lead is unlikely to change.<br><br>
+According to sources within the Gephardt campaign, they calculated around an hour ago that it was mathematically impossible for them to defeat the President. That is when he began to prepare his concession speech, which he is set to deliver in under a half hour from now. He also gave a concession phone call to President Dole about 5 minutes ago. Dole reportedly received the call with grace and even cracked a few jokes with him.<br><br>It seems the House of Representatives will stay in control of the Democratic Party for at least two more years. The Senate meanwhile, has been projected to remain in GOP control, therefore retaining the divided government which was established in the 1998 midterms.<br><br>This election marks the beginning of the end of an era as Dole, a decorated World War II veteran, is almost certainly going to be the final president from the Greatest Generation. He is expected to give his victory speech shortly after Gephardt gives his concession speech. He will be sworn in for his second term on January 20th, 2001, and will serve until January 20th, 2005, as he is term limited. CNN will cover his second inauguration and any potential cabinet changes in the coming days, so please stay tuned.</div>`;
+    }
+    if(quickstats[0] > 320) {
+        setImage("https://i.imgur.com/1ho7ZxE.png");
+        return `<div style='overflow-y:scroll;height:310px;'><h4>CNN Election 2000 Coverage</h4>
+<h4>DOLE RE-ELECTED DECISIVELY; THE PRESIDENT SWEEPS THROUGHOUT MOST SWING STATES. A HIMULIATED GEPHARDT CONCEDES.</h4>
+
+President Robert J. Dole of Kansas, at the age of 77 years old, has been re-elected, winning his party a second term in the Oval Office, in a close election against the Speaker of the House, Richard Gephardt. In a stark comparison to four years ago, Dole is expected to win the popular vote against his challenger; this is not expected to shift at all, as Dole has won decisively in the electoral college vote.<br><br>According to sources within the Gephardt campaign, they calculated around two hours ago that it was mathematically impossible for them to defeat the President. That is when he began to prepare his concession speech, which he is set to deliver in under a half hour from now. They also knew things were going wrong fairly early in the night after obtaining exit poll results in multiple swing states. He gave a concession phone call to President Dole about 5 minutes ago. Dole reportedly received the call with grace and even cracked a few jokes with him. However, Gephardt understandably entered the call with a terrible mood.<br><br>It seems the House of Representatives will stay in control of the Democratic Party for at least two more years; however, their majority has been whittled down considerably. The Senate meanwhile, has been projected to remain in GOP control, therefore retaining the divided government which was established in the 1998 midterms.<br><br>This election marks the beginning of the end of an era as Dole, a decorated World War II veteran, is almost certainly going to be the final president from the Greatest Generation. He is expected to give his victory speech shortly after Gephardt gives his concession speech. He will be sworn in for his second term on January 20th, 2001, and will serve until January 20th, 2005, as he is term limited. CNN will cover his second inauguration and any potential cabinet changes in the coming days, so please stay tuned.</div>`;
+    }
+    if(quickstats[0] < 270) {
+        setImage("https://i.imgur.com/fl2edqb.png");
+        return `<div style='overflow-y:scroll;height:310px;'><h4>CNN Election 2000 Coverage</h4>
+<h4>SPEAKER GEPHARDT BEATS DOLE; MULTIPLE STATES YET TO BE CALLED. THE PRESIDENT CONCEDES.</h4>
+
+Speaker Richard Andrew Gephardt of Missouri, at the age of 59 years old, has been elected President of the United States, winning his party a term in the Oval Office, in a close election against the incumbent President, Bob Dole. In a stark comparison to four years ago, unlike Dole, he is expected to win both the popular vote and electoral vote against Dole; however, due to the election being close, this lead in the popular vote can shift; however, it is unlikely to change.<br><br>According to sources within the Dole campaign, they calculated around an hour ago that it was mathematically impossible for them to defeat the Speaker. That is when he began to prepare his concession speech, which he is set to deliver in under a half hour from now. He also gave a concession phone call to President-elect Gephardt about 5 minutes ago. Gephardt reportedly received the call with grace, treating the defeated President with dignity.<br><br>It seems the House of Representatives will stay in control of the Democratic Party for at least two more years. The Senate meanwhile, has been projected to remain in GOP control, therefore retaining the divided government which was established in the 1998 midterms.<br><br>This election marks the end of an era as Dole, a decorated World War II veteran, is almost certainly going to be the final president from the Greatest Generation. The President-elect is expected to give his victory speech shortly after Dole gives his concession speech. He will be sworn in for his first term on January 20th, 2001, and will serve that term until January 20th, 2005, upon which he is eligible for a second term. CNN will cover his inauguration and his cabinet nominations in the coming days, so please stay tuned.</div>`;
+    }
+    if(quickstats[0] < 202) {
+        setImage("https://i.imgur.com/fl2edqb.png");
+        return `<div style='overflow-y:scroll;height:310px;'><h4>CNN Election 2000 Coverage</h4>
+<h4>GEPHARDT HANDILY BEATS DOLE; THE SPEAKER SWEEPS THROUGHOUT MOST SWING STATES. A HIMULIATED PRESIDENT DOLE CONCEDES.</h4>
+
+Speaker Richard Andrew Gephardt of Missouri, at the age of 59 years old, has been elected President of the United States, winning his party a term in the Oval Office with a decisive victory against the incumbent President, Bob Dole. In a stark comparison to four years ago, unlike Dole, he is expected to win both the popular vote and electoral vote against Dole. This lead in the popular vote is unlikely to change due to how decisive the victory is in the electoral vote.<br><br>
+According to sources within the Dole campaign, they calculated around two hours ago that it was mathematically impossible for them to defeat the Speaker. That is when he began to prepare his concession speech, which he is set to deliver in under a half hour from now. They also knew things were going wrong fairly early in the night after obtaining exit poll results in multiple swing states. He gave a concession phone call to President-elect Gephardt about 5 minutes ago. Gephardt reportedly received the call with grace, treating the defeated President with dignity. However, Dole understandably entered the call with a terrible mood.<br><br>
+It seems the House of Representatives will stay in control of the Democratic Party for at least two more years, with their lead expanding respectably. The Senate meanwhile, has been projected to remain in GOP control, albeit with a slimmer majority, therefore retaining the divided government which was established in the 1998 midterms.<br><br>This election marks the end of an era as Dole, a decorated World War II veteran, is almost certainly going to be the final president from the Greatest Generation. The President-elect is expected to give his victory speech shortly after Dole gives his concession speech. He will be sworn in for his first term on January 20th, 2001, and will serve that term until January 20th, 2005, upon which he is eligible for a second term. CNN will cover his inauguration and his cabinet nominations in the coming days, so please stay tuned.</div>`;
+    }
+    if(quickstats[0] == 269) {
+        setImage("https://i.imgur.com/huDqniy.png");
+        return `<div style='overflow-y:scroll;height:310px;'><h4>CNN Election 2000 Coverage</h4>
+<h4>CONGRESS CLEARS WAY FOR GEPHARDT TO BE SWORN IN AS PRESIDENT IN THE AFTERMATH OF LAST NOVEMBER'S ELECTION DEADLOCKED. SENATE ELECTS KEMP FOR A SECOND TERM AS VICE PRESIDENT. FIRST BIPARTISAN ADMINISTRATION SINCE 1797.</h4>
+
+The once-in-a-lifetime electoral college deadlock of last November has finally been settled. The Democratic Party's nominee for president, the Speaker of the House, Richard Andrew Gephardt of Missouri, has been elevated to the presidency despite energetic efforts from Minority Leader Dennis Hastert to convince Blue Dogs to vote for Dole.<br><br>In stark contrast, however, it seems the Senate has decided to re-elect incumbent Vice President Jack Kemp over former Senator Dianne Feinstein of California, who was Gephardt's running mate in the election. This effectively promotes Kemp as the GOP's forefront leader, giving him a lofty position if he decides to run for president in 2004.<br><br>A mixed administration has not been seen since the days of John Adams and Thomas Jefferson, so the situation could become feral easily; however, President-elect Gephardt and Vice President Kemp are already in discussions about how a Gephardt-Kemp administration will look. Sources on Capitol Hill allege that Gephardt has expressed openness to retaining some of the Dole Administration's secretaries, such as Secretary of State Colin Powell.<br><br>This election marks the end of an era as Dole, a decorated World War II veteran, is almost certainly going to be the final president from the Greatest Generation. The President-elect is expected to give a speech to the nation at the Capitol shortly. He will be sworn in for his first term on January 20th, 2001, and will serve that term until January 20th, 2005, upon which he is eligible for a second term. CNN will cover his inauguration and his cabinet nominations in the coming days, so please stay tuned.</div>`;
+    }
+}
+
+
+campaignTrail_temp.jet_data = [{
+    "mapping_enabled": false,
+    "mapping_data": {
+        "mapSvg": ""
+    },
+    "banner_enabled": false,
+    "banner_data": {},
+    "cyoa_enabled": true,
+    "cyoa_data": {},
+    "endings_enabled": true,
+    "ending_data": {
+        "1735498607809": {
+            "id": 1735498607809,
+            "variable": 0,
+            "operator": "==",
+            "value": 0,
+            "endingImage": "https://i.imgur.com/2MBz1pL.png",
+            "endingText": "<h4>I know you cheated. Did you really think you could get away with it?</h4>\n\nget a life bozo",
+            "amount": "538"
+        },
+        "1735500412112": {
+            "id": 1735500412112,
+            "variable": 0,
+            "operator": ">",
+            "value": 0,
+            "endingImage": "https://i.imgur.com/1ho7ZxE.png",
+            "endingText": "<div style='overflow-y:scroll;height:310px;'><h4>CNN Election 2000 Coverage</h4>\n<h4>PRESIDENT DOLE RE-ELECTED BY CLOSE MARGIN; MULTIPLE STATES YET TO BE CALLED. GEPHARDT CONCEDES.</h4>\n\nPresident Robert J. Dole of Kansas, at the age of 77 years old, has been re-elected, winning his party a second term in the Oval Office, in a close election against the Speaker of the House, Richard Gephardt. In a stark comparison to four years ago, Dole is expected to win the popular vote against his challenger; however, due to the election being close, this can shift; however, his lead is unlikely to change.<br><br>\nAccording to sources within the Gephardt campaign, they calculated around an hour ago that it was mathematically impossible for them to defeat the President. That is when he began to prepare his concession speech, which he is set to deliver in under a half hour from now. He also gave a concession phone call to President Dole about 5 minutes ago. Dole reportedly received the call with grace and even cracked a few jokes with him.<br><br>It seems the House of Representatives will stay in control of the Democratic Party for at least two more years. The Senate meanwhile, has been projected to remain in GOP control, therefore retaining the divided government which was established in the 1998 midterms.<br><br>This election marks the beginning of the end of an era as Dole, a decorated World War II veteran, is almost certainly going to be the final president from the Greatest Generation. He is expected to give his victory speech shortly after Gephardt gives his concession speech. He will be sworn in for his second term on January 20th, 2001, and will serve until January 20th, 2005, as he is term limited. CNN will cover his second inauguration and any potential cabinet changes in the coming days, so please stay tuned.</div>",
+            "amount": "270"
+        },
+        "1735501028880": {
+            "id": 1735501028880,
+            "variable": 0,
+            "operator": ">",
+            "value": 0,
+            "endingImage": "https://i.imgur.com/1ho7ZxE.png",
+            "endingText": "<div style='overflow-y:scroll;height:310px;'><h4>CNN Election 2000 Coverage</h4>\n<h4>DOLE RE-ELECTED DECISIVELY; THE PRESIDENT SWEEPS THROUGHOUT MOST SWING STATES. A HIMULIATED GEPHARDT CONCEDES.</h4>\n\nPresident Robert J. Dole of Kansas, at the age of 77 years old, has been re-elected, winning his party a second term in the Oval Office, in a close election against the Speaker of the House, Richard Gephardt. In a stark comparison to four years ago, Dole is expected to win the popular vote against his challenger; this is not expected to shift at all, as Dole has won decisively in the electoral college vote.<br><br>According to sources within the Gephardt campaign, they calculated around two hours ago that it was mathematically impossible for them to defeat the President. That is when he began to prepare his concession speech, which he is set to deliver in under a half hour from now. They also knew things were going wrong fairly early in the night after obtaining exit poll results in multiple swing states. He gave a concession phone call to President Dole about 5 minutes ago. Dole reportedly received the call with grace and even cracked a few jokes with him. However, Gephardt understandably entered the call with a terrible mood.<br><br>It seems the House of Representatives will stay in control of the Democratic Party for at least two more years; however, their majority has been whittled down considerably. The Senate meanwhile, has been projected to remain in GOP control, therefore retaining the divided government which was established in the 1998 midterms.<br><br>This election marks the beginning of the end of an era as Dole, a decorated World War II veteran, is almost certainly going to be the final president from the Greatest Generation. He is expected to give his victory speech shortly after Gephardt gives his concession speech. He will be sworn in for his second term on January 20th, 2001, and will serve until January 20th, 2005, as he is term limited. CNN will cover his second inauguration and any potential cabinet changes in the coming days, so please stay tuned.</div>",
+            "amount": "320"
+        },
+        "1735501180817": {
+            "id": 1735501180817,
+            "variable": 0,
+            "operator": "<",
+            "value": 0,
+            "endingImage": "https://i.imgur.com/fl2edqb.png",
+            "endingText": "<div style='overflow-y:scroll;height:310px;'><h4>CNN Election 2000 Coverage</h4>\n<h4>SPEAKER GEPHARDT BEATS DOLE; MULTIPLE STATES YET TO BE CALLED. THE PRESIDENT CONCEDES.</h4>\n\nSpeaker Richard Andrew Gephardt of Missouri, at the age of 59 years old, has been elected President of the United States, winning his party a term in the Oval Office, in a close election against the incumbent President, Bob Dole. In a stark comparison to four years ago, unlike Dole, he is expected to win both the popular vote and electoral vote against Dole; however, due to the election being close, this lead in the popular vote can shift; however, it is unlikely to change.<br><br>According to sources within the Dole campaign, they calculated around an hour ago that it was mathematically impossible for them to defeat the Speaker. That is when he began to prepare his concession speech, which he is set to deliver in under a half hour from now. He also gave a concession phone call to President-elect Gephardt about 5 minutes ago. Gephardt reportedly received the call with grace, treating the defeated President with dignity.<br><br>It seems the House of Representatives will stay in control of the Democratic Party for at least two more years. The Senate meanwhile, has been projected to remain in GOP control, therefore retaining the divided government which was established in the 1998 midterms.<br><br>This election marks the end of an era as Dole, a decorated World War II veteran, is almost certainly going to be the final president from the Greatest Generation. The President-elect is expected to give his victory speech shortly after Dole gives his concession speech. He will be sworn in for his first term on January 20th, 2001, and will serve that term until January 20th, 2005, upon which he is eligible for a second term. CNN will cover his inauguration and his cabinet nominations in the coming days, so please stay tuned.</div>",
+            "amount": "270"
+        },
+        "1735501316181": {
+            "id": 1735501316181,
+            "variable": 0,
+            "operator": "<",
+            "value": 0,
+            "endingImage": "https://i.imgur.com/fl2edqb.png",
+            "endingText": "<div style='overflow-y:scroll;height:310px;'><h4>CNN Election 2000 Coverage</h4>\n<h4>GEPHARDT HANDILY BEATS DOLE; THE SPEAKER SWEEPS THROUGHOUT MOST SWING STATES. A HIMULIATED PRESIDENT DOLE CONCEDES.</h4>\n\nSpeaker Richard Andrew Gephardt of Missouri, at the age of 59 years old, has been elected President of the United States, winning his party a term in the Oval Office with a decisive victory against the incumbent President, Bob Dole. In a stark comparison to four years ago, unlike Dole, he is expected to win both the popular vote and electoral vote against Dole. This lead in the popular vote is unlikely to change due to how decisive the victory is in the electoral vote.<br><br>\nAccording to sources within the Dole campaign, they calculated around two hours ago that it was mathematically impossible for them to defeat the Speaker. That is when he began to prepare his concession speech, which he is set to deliver in under a half hour from now. They also knew things were going wrong fairly early in the night after obtaining exit poll results in multiple swing states. He gave a concession phone call to President-elect Gephardt about 5 minutes ago. Gephardt reportedly received the call with grace, treating the defeated President with dignity. However, Dole understandably entered the call with a terrible mood.<br><br>\nIt seems the House of Representatives will stay in control of the Democratic Party for at least two more years, with their lead expanding respectably. The Senate meanwhile, has been projected to remain in GOP control, albeit with a slimmer majority, therefore retaining the divided government which was established in the 1998 midterms.<br><br>This election marks the end of an era as Dole, a decorated World War II veteran, is almost certainly going to be the final president from the Greatest Generation. The President-elect is expected to give his victory speech shortly after Dole gives his concession speech. He will be sworn in for his first term on January 20th, 2001, and will serve that term until January 20th, 2005, upon which he is eligible for a second term. CNN will cover his inauguration and his cabinet nominations in the coming days, so please stay tuned.</div>",
+            "amount": "202"
+        },
+        "1735823226387": {
+            "id": 1735823226387,
+            "variable": 0,
+            "operator": "==",
+            "value": 0,
+            "endingImage": "https://i.imgur.com/huDqniy.png",
+            "endingText": "<div style='overflow-y:scroll;height:310px;'><h4>CNN Election 2000 Coverage</h4>\n<h4>CONGRESS CLEARS WAY FOR GEPHARDT TO BE SWORN IN AS PRESIDENT IN THE AFTERMATH OF LAST NOVEMBER'S ELECTION DEADLOCKED. SENATE ELECTS KEMP FOR A SECOND TERM AS VICE PRESIDENT. FIRST BIPARTISAN ADMINISTRATION SINCE 1797.</h4>\n\nThe once-in-a-lifetime electoral college deadlock of last November has finally been settled. The Democratic Party's nominee for president, the Speaker of the House, Richard Andrew Gephardt of Missouri, has been elevated to the presidency despite energetic efforts from Minority Leader Dennis Hastert to convince Blue Dogs to vote for Dole.<br><br>In stark contrast, however, it seems the Senate has decided to re-elect incumbent Vice President Jack Kemp over former Senator Dianne Feinstein of California, who was Gephardt's running mate in the election. This effectively promotes Kemp as the GOP's forefront leader, giving him a lofty position if he decides to run for president in 2004.<br><br>A mixed administration has not been seen since the days of John Adams and Thomas Jefferson, so the situation could become feral easily; however, President-elect Gephardt and Vice President Kemp are already in discussions about how a Gephardt-Kemp administration will look. Sources on Capitol Hill allege that Gephardt has expressed openness to retaining some of the Dole Administration's secretaries, such as Secretary of State Colin Powell.<br><br>This election marks the end of an era as Dole, a decorated World War II veteran, is almost certainly going to be the final president from the Greatest Generation. The President-elect is expected to give a speech to the nation at the Capitol shortly. He will be sworn in for his first term on January 20th, 2001, and will serve that term until January 20th, 2005, upon which he is eligible for a second term. CNN will cover his inauguration and his cabinet nominations in the coming days, so please stay tuned.</div>",
+            "amount": "269"
+        }
+    }
+}
+]
 
 //Other stuff oooh
 
