@@ -77,7 +77,7 @@ campaignTrail_temp.candidate_json = [
             "party": "Republican Party",
             "state": "Kansas",
             "priority": 1,
-            "description": "<div style='overflow-y:scroll;height:200px;'><b>FYI to playtesters: VP reselection is yet to be complete. Only Kemp 100% functions at the moment.</b><p>No one knows how or why Bob Dole is here right now; not even he knows himself, but he is.</p>\n\n<p>When he won the Republican Party's nomination for president, he knew he probably was not going to defeat President Clinton. All the polls had him trailing Clinton heavily, even though just a year earlier he was polled to defeat Clinton for re-election. When election night came, he watched the results already resigned to the fact that Clinton would be elected to a second term.</p>\n\n<p>But the opposite happened. In the most surprising upset since 1948, he unexpectedly beat Clinton. While he won the Electoral College, Clinton won the day in the popular vote. So, President-elect Dole will find himself in a peculiar situation when he takes the oath on January 20th. When that happens, he's going to need to find a way to win over the hearts of the vast majority of the American people, and quickly before the 1998 midterms. If the midterms prove disastrous, Dole can kiss his chances for re-election goodbye against whichever schmuck the Democrats nominate in 2000.</p></div>",
+            "description": "<div style='overflow-y:scroll;height:200px;'><p>No one knows how or why Bob Dole is here right now; not even he knows himself, but he is.</p>\n\n<p>When he won the Republican Party's nomination for president, he knew he probably was not going to defeat President Clinton. All the polls had him trailing Clinton heavily, even though just a year earlier he was polled to defeat Clinton for re-election. When election night came, he watched the results already resigned to the fact that Clinton would be elected to a second term.</p>\n\n<p>But the opposite happened. In the most surprising upset since 1948, he unexpectedly beat Clinton. While he won the Electoral College, Clinton won the day in the popular vote. So, President-elect Dole will find himself in a peculiar situation when he takes the oath on January 20th. When that happens, he's going to need to find a way to win over the hearts of the vast majority of the American people, and quickly before the 1998 midterms. If the midterms prove disastrous, Dole can kiss his chances for re-election goodbye against whichever schmuck the Democrats nominate in 2000.</p></div>",
             "color_hex": "#bf1d29",
             "secondary_color_hex": "#FFA0A0",
             "is_active": 1,
@@ -104,7 +104,7 @@ campaignTrail_temp.candidate_json = [
             "color_hex": "#1c408c",
             "secondary_color_hex": "#90C0FF",
             "is_active": 1,
-            "image_url": "https://i.imgur.com/YCtas3y.png",
+            "image_url": "https://i.imgur.com/YFpGbeL.png",
             "electoral_victory_message": "<h3>Congratulations! You have won the 2000 election.</h3><p>Though it was perhaps expected, you could have easily faltered at a number of points. Credit to you for pulling through.</p><p>On the political front, you can continue the Clinton legacy and strengthen Social Security for generations to come. Perhaps you can succeed on health care where Clinton came up short? Or maybe you can create a future of renewable energy for America. Just be wary of a (George or Jeb?) Bush challenge in 2004.</p>",
             "electoral_loss_message": "<h3>Sorry! You have lost the 2000 election.</h3><p>Surely the second-guessing will be intense, but if things were close you could probably run again in 2004.</p><p>It seems that with George W. Bush and a Republican majority, the United States can expect some conservative policy-making over the next four years. Hopefully Bush comes through on his promise to govern in a bipartisan, conciliatory manner. A lot should depend on the margin of his victory, and whether it was large or small.</p>",
             "no_electoral_majority_message": "<h3>Sorry! You have lost in a squeaker.</h3><p>No candidate achieved a majority of the electoral votes, for the first time since 1824. Unfortunately for you, a majority of states have Republican controlled congressional delegations.</p><p>It seems that with George W. Bush and a Republican majority, the United States can expect some conservative policy-making over the next four years. Hopefully Bush comes through on his promise to govern in a bipartisan, conciliatory manner.</p>",
@@ -177,7 +177,7 @@ campaignTrail_temp.candidate_json = [
             "electoral_victory_message": "''",
             "electoral_loss_message": "''",
             "no_electoral_majority_message": "''",
-            "description_as_running_mate": "you've seen too much",
+            "description_as_running_mate": "<div style='overflow-y:scroll;height:200px;'><p>Ah yes, Jack Kemp.</p> <p>One of the most nationally popular Republicans, a former football star, a former congressman, a 1988 presidential contender, a Bush Cabinet secretary, and now, Vice President-elect of the United States.</p><p>Despite being partners for at least the next four years, you and he aren't exactly the most friendly towards each other. You both were rivals for de facto party leadership back in the day; also, you both ran against each other for the 1988 presidential nomination.</p><p>However, his sheer popularity, coalitions, and undeniable competence compelled you to choose him to be your running mate in 1996, and also, it wasn't like you were going to win... right...?</p><p>Unfortunately for you, that's exactly what happened. Yeah, being President is nice and all, but that means you have to put up with a man who you reluctantly selected to be your running mate with the understanding that you were likely going to lose, even if you theoretically ran a perfect campaign, yet still won somehow anyways.</p><p>So, you can either keep him on for another four years or drop him. Most of your people think it's a terrible idea, but hey, you might be onto something if you do.</p></div>",
             "candidate_score": 0,
             "running_mate": true
         }
@@ -200,7 +200,7 @@ campaignTrail_temp.candidate_json = [
             "electoral_victory_message": "''",
             "electoral_loss_message": "''",
             "no_electoral_majority_message": "''",
-            "description_as_running_mate": "seriously bro you've seen too much",
+            "description_as_running_mate": "<div style='overflow-y:scroll;height:200px;'><p>Huh, you don't want to spend the full eight years with Jack? That's a shame, however; Denny thinks he's got the right man to take up the mantle.</p><p>Kasich is fairly young for a politician of his magnitude, being only 48 years old, yet having 17 years in Congress under his belt already. Should I also mention he's the author of the Balanced Budget Amendment, which you got passed in 1997? Or perhaps each of the balanced budgets you've gotten passed?</p><p>Needless to say, he's a rapidly rising star in the conservative movement and the Republican Party as a whole. He represents the future of the party. And Denny thinks with you deciding to drop Kemp, it might be good to select Kasich to toss a bone to the next generation.</p> <p>However, you must consider this: he has a considerable lack of charisma. It all depends if you're willing to deal with the potential baggage with that, because otherwise, he's a dream running mate.</p></div>",
             "candidate_score": 0,
             "running_mate": true
         }
@@ -219,11 +219,11 @@ campaignTrail_temp.candidate_json = [
             "color_hex": "#FF0000",
             "secondary_color_hex": "#FFA0A0",
             "is_active": 0,
-            "image_url": "https://i.imgur.com/BV6sEOB.png",
+            "image_url": "https://i.imgur.com/EVW3nrY.png",
             "electoral_victory_message": "''",
             "electoral_loss_message": "''",
             "no_electoral_majority_message": "''",
-            "description_as_running_mate": "can't you not listen? jeez.",
+            "description_as_running_mate": "<div style='overflow-y:scroll;height:200px;'><p>Kemp just wasn't your cup of tea, heh? Well, Lott think's there's a good guy for you to replace him with out there, and he's right under your own nose.</p><p>That's right, he's already inside of your cabinet, specifically, as your UN Ambassador, John Danforth. Before he was managing things at the UN, he was a US Senator from Missouri, serving 3 terms, succeeding Stuart Symington, whom he ran previously against in his final race, with Symington narrowly prevailing.</p><p>In the Senate, he made his mark as a moderate conservative, quipping he joined the Republian Party because of \"the same reason you sometimes choose which movie to see—it's the one with the shortest line.\"</p><p>With that being said, he's staked out some minor unusual positions for a conservative to take, such as opposing the death penalty. However, his foreign policy expertise, his popularity in his home state, which is ironically the very state Dick Gephardt's from, could really help you out. He's also an Episcopal priest, meaning he really knows how to move a crowd.</p><p>He's a no brainer, Lott says.</p></div>",
             "candidate_score": 0,
             "running_mate": true
         }
@@ -242,11 +242,11 @@ campaignTrail_temp.candidate_json = [
             "color_hex": "#0000FF",
             "secondary_color_hex": "#90C0FF",
             "is_active": 0,
-            "image_url": "https://i.imgur.com/3IO3NjT.png",
+            "image_url": "https://i.imgur.com/biPdgdU.png",
             "electoral_victory_message": "''",
             "electoral_loss_message": "''",
             "no_electoral_majority_message": "''",
-            "description_as_running_mate": "you've seen too much",
+            "description_as_running_mate": "<div style='overflow-y:scroll;height:200px;'><p>So, it seems the nomination's going to be yours. It's clear with the results of the primary; the base is yearning for history to be made. They're tired of the same old same old. The same old fully white, male ticket.</p><p>And it so happens that Wellstone promised to select a female running mate. While Wellstone didn't win the nomination, it might be a good idea to take that idea and employ it on your own to keep his people happy.</p><p>The team has narrowed down the historic female option to one woman: Dianne Feinstein.</p><p>She's a trailblazer. She's Jewish, the first woman to represent California in the Senate, as well as the first to be Mayor of San Francisco, during which she was ranked as one of America's most effective mayors.</p><p>So, she's got the record, but what about some things she's passionate about? Well, she's an ardent believer in gun control, authoring the Assault Weapons Ban, which may or may not help you, depending on how you run your campaign. She's also firmly in the pro-choice camp of the abortion argument, as well as a strong advocate for national defense, which could help your defectiveness in that regard slightly.</p><p>If you really want to catch headlines, Feinstein's your option; however, you must consider this: she's up for re-election this year. If you select her, she likely can't run for another term. So, you've really got to be sure about your chances at victory if you plan on selecting her, because if you lose, you've sacrificed an experienced Senator for nothing.</p></div>",
             "candidate_score": 0,
             "running_mate": true
         }
@@ -265,11 +265,11 @@ campaignTrail_temp.candidate_json = [
             "color_hex": "#0000FF",
             "secondary_color_hex": "#90C0FF",
             "is_active": 0,
-            "image_url": "https://i.imgur.com/VoFUDcJ.png",
+            "image_url": "https://i.imgur.com/K47Cr1R.png",
             "electoral_victory_message": "''",
             "electoral_loss_message": "''",
             "no_electoral_majority_message": "''",
-            "description_as_running_mate": "seriously bro you've seen too much",
+            "description_as_running_mate": "<div style='overflow-y:scroll;height:200px;'><p>Say, you want yourself a Bill Clinton lite to woo the Southerners? Alright, Dick, I hear you. I present you with Governor Miller of Georgia.</p><p>He's ideologically very similar to Clinton and shares a close relationship with the former president, so that alone could be a deciding factor in selecting him to be your running mate, because he could encourage him to campaign for you throughout the South. Additionally, he was one of the keynote speakers at the 1992 Democratic National Convention.</p><p>He's got a no-nonsense, tough-on-crime approach, which could help you defeat the perception in the South that the national party is weak on crime. However, there are a few things that could really go wrong with him being selected.</p><p>First off, he's a former segregationist. In his earlier campaigns, in the sixties, he endorsed segregation and denounced Lyndon B. Johnson as \"a Southerner who has sold his birthright for a mess of dark porridge.\"</p><p>Secondly, he isn't really nationally known despite his performance at the 1992 DNC, so you'll have to take some time to properly get his name out there.</p><p>And lastly, he's currently making a bid for the open US Senate seat in Georgia, and he's perhaps the only candidate who can hold the seat against a potential Republican surge due to the presidential election. Him being your running mate would leave that seat open to whoever the Republicans run.</p><p>So, choose wisely. Do you want him, or not?</p></div>",
             "candidate_score": 0,
             "running_mate": true
         }
@@ -292,7 +292,7 @@ campaignTrail_temp.candidate_json = [
             "electoral_victory_message": "''",
             "electoral_loss_message": "''",
             "no_electoral_majority_message": "''",
-            "description_as_running_mate": "can't you not listen? jeez.",
+            "description_as_running_mate": "<div style='overflow-y:scroll;height:200px;'><p>You clearly have a decent chance at beating Dole. However, that begs the question: what happens after?</p><p>You'll surely need someone who'd do you good legislatively in order to get your ambitious agenda through, given the likely Republican Senate majority.</p><p>This is where former US Senator George Mitchell of Maine comes in. He's previously served as Senate Majority Leader and the Deputy President pro tempore of the Senate, as well as the US Special Envoy for Northern Ireland.</p>\n<p>Aside from having the connections you need to get your agenda through the Senate, he does a lot to heal the gap of credibility you are currently suffering in comparison to Dole in terms of foreign policy, especially in regards to counterterrorism.</p><p>His associations with historical great Senate Democrats, such as Hubert Humphrey and Edmund Muskie, to name a few, could also allow you to play a nostalgia card of your own to counter Dole's card in reminiscing about Ronald Reagan.</p><p>So, he's a safe, risk-free, and strong pick if you really want to get a good portion of your agenda done if you win the presidency.</p></div>",
             "candidate_score": 0,
             "running_mate": true
         }
@@ -1013,11 +1013,7 @@ document.getElementById("game_start").addEventListener("click", loadMinesweeperC
 loadMinesweeperClassic();
 
 let z = new MutationObserver((mutationsList, observer) => {
-            let runningMateSummary = document.querySelector("#running_mate_summary");
-            if (runningMateSummary) {
-                $("#running_mate_id_button").click();
-                observer.disconnect()
-            }
+
         });
 
 
