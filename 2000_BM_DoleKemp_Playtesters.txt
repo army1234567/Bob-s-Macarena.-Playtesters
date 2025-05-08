@@ -511,7 +511,7 @@ campaignTrail_temp.answers_json = [
         "pk": 3326,
         "fields": {
             "question": 347,
-            "description": "<b>There's a lot of Democrats still in the South who are holding onto their districts by a thread. We've got to curb stomping them, either by \"convincing\" them to join the GOP or overloading their opponents with funds to quash them if they stay loyal to the Democratic Party.</b>"
+            "description": "<b>There's a lot of Democrats still in the South who are holding onto their districts by a thread. We've got to really start curb stomping them, either by \"convincing\" them to join the GOP or overloading their opponents with funds to quash them if they stay loyal to the Democratic Party.</b>"
         }
     },
     {
