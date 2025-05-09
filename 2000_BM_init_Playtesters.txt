@@ -35,6 +35,9 @@ e.ElectionPopup = "The deal is done. The game is over. And now, the consequences
 e.WinPopup = "The throne is yours, yet the kingdom trembles. Rule wisely."
 e.LosePopup = "You gambled—and lost. The throne belongs to another."
 
+campaignTrail_temp.difficulty_level_json = JSON.parse("[{\"model\": \"campaign_trail.difficulty_level\", \"pk\": 1, \"fields\": {\"name\": \"Beginner\", \"multiplier\": 1.0}}, {\"model\": \"campaign_trail.difficulty_level\", \"pk\": 2, \"fields\": {\"name\": \"Casual\", \"multiplier\": 0.95}}, {\"model\": \"campaign_trail.difficulty_level\", \"pk\": 3, \"fields\": {\"name\": \"Realistic\", \"multiplier\": 0.90}}, {\"model\": \"campaign_trail.difficulty_level\", \"pk\": 4, \"fields\": {\"name\": \"Uphill Battle\", \"multiplier\": 0.85}}]");
+
+
 let style = document.createElement('style');
 style.type = 'text/css';
 style.id = 'dynamic-style';
@@ -437,6 +440,25 @@ campaignTrail_temp.running_mate_json = [
         }
     }
 ]
+
+// the wrapper here is the same that makes sure your music player doesn't exist twice basically
+if(!campaignTrail_temp.observer){
+
+    campaignTrail_temp.observer = true
+
+    // Define the MutationObserver
+    let masterObserver = new MutationObserver(masterFunction);
+    function masterFunction() {
+        masterObserver.disconnect();
+
+        addColor();
+
+        masterObserver.observe(document.body, { childList: true, subtree: true });
+    }
+
+    // Start observing the document with the master observer
+    masterObserver.observe(document.body, { childList: true, subtree: true });
+}
 
 var changeGameDisp = (hide) => {
   disp = "";
